@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "헤더 수정기"
+  },
+  "extDescription": {
+    "message": "HTTP 요청 및 응답 헤더를 추가하거나 삭제할 수 있는 확장 프로그램"
+  },
+  "appTitle": {
+    "message": "간편 헤더 수정기"
+  },
+  "tabRequest": {
+    "message": "요청 헤더"
+  },
+  "tabResponse": {
+    "message": "응답 헤더"
+  },
+  "addRequestHeader": {
+    "message": "요청 헤더 추가"
+  },
+  "addResponseHeader": {
+    "message": "응답 헤더 추가"
+  },
+  "headerNamePlaceholder": {
+    "message": "헤더 이름 (예: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "헤더 값"
+  },
+  "btnAdd": {
+    "message": "추가"
+  },
+  "savedRequestHeaders": {
+    "message": "저장된 요청 헤더"
+  },
+  "savedResponseHeaders": {
+    "message": "저장된 응답 헤더"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>중요:</strong> 일부 헤더는 상황에 따라서 적용이 되지 않을 수도 있습니다."
+  },
+  "btnChangeLanguage": {
+    "message": "언어 변경"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "헤더 이름 (예: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 모든 탭에서 자동으로 적용됩니다"
+  },
+  "alertEmptyFields": {
+    "message": "헤더 이름과 값을 모두 입력해주세요."
+  },
+  "alertDuplicate": {
+    "message": "이미 존재하는 헤더입니다."
+  },
+  "emptyState": {
+    "message": "저장된 헤더가 없습니다."
+  },
+  "warningNotApplied": {
+    "message": "🚨 일부 헤더는 적용이 안될 수 있습니다."
+  },
+  "btnDelete": {
+    "message": "삭제"
+  }
+}

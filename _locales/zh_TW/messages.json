@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "標頭修改器"
+  },
+  "extDescription": {
+    "message": "可以新增或刪除HTTP請求和回應標頭的擴充功能"
+  },
+  "appTitle": {
+    "message": "簡易標頭修改器"
+  },
+  "tabRequest": {
+    "message": "請求標頭"
+  },
+  "tabResponse": {
+    "message": "回應標頭"
+  },
+  "addRequestHeader": {
+    "message": "新增請求標頭"
+  },
+  "addResponseHeader": {
+    "message": "新增回應標頭"
+  },
+  "headerNamePlaceholder": {
+    "message": "標頭名稱（例如：User-Agent）"
+  },
+  "headerValuePlaceholder": {
+    "message": "標頭值"
+  },
+  "btnAdd": {
+    "message": "新增"
+  },
+  "savedRequestHeaders": {
+    "message": "已儲存的請求標頭"
+  },
+  "savedResponseHeaders": {
+    "message": "已儲存的回應標頭"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>重要：</strong>某些標頭可能根據情況無法套用。"
+  },
+  "btnChangeLanguage": {
+    "message": "更改語言"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "標頭名稱（例如：access-control-allow-origin）"
+  },
+  "infoMessage": {
+    "message": "💡 自動套用至所有分頁"
+  },
+  "alertEmptyFields": {
+    "message": "請輸入標頭名稱和值。"
+  },
+  "alertDuplicate": {
+    "message": "此標頭已存在。"
+  },
+  "emptyState": {
+    "message": "沒有已儲存的標頭。"
+  },
+  "warningNotApplied": {
+    "message": "🚨 某些標頭可能無法套用。"
+  },
+  "btnDelete": {
+    "message": "刪除"
+  }
+}

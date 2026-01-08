@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Header-modifikator"
+  },
+  "extDescription": {
+    "message": "Utvidelse for å legge til eller fjerne HTTP-forespørsels- og svarheadere"
+  },
+  "appTitle": {
+    "message": "Enkel Header-modifikator"
+  },
+  "tabRequest": {
+    "message": "Forespørselsheadere"
+  },
+  "tabResponse": {
+    "message": "Svarheadere"
+  },
+  "addRequestHeader": {
+    "message": "Legg til forespørselsheader"
+  },
+  "addResponseHeader": {
+    "message": "Legg til svarheader"
+  },
+  "headerNamePlaceholder": {
+    "message": "Header-navn (f.eks.: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Header-verdi"
+  },
+  "btnAdd": {
+    "message": "Legg til"
+  },
+  "savedRequestHeaders": {
+    "message": "Lagrede forespørselsheadere"
+  },
+  "savedResponseHeaders": {
+    "message": "Lagrede svarheadere"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Viktig:</strong> Noen headere kan kanskje ikke anvendes avhengig av situasjonen."
+  },
+  "btnChangeLanguage": {
+    "message": "Endre språk"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Header-navn (f.eks.: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Brukes automatisk på alle faner"
+  },
+  "alertEmptyFields": {
+    "message": "Vennligst skriv inn både header-navn og -verdi."
+  },
+  "alertDuplicate": {
+    "message": "Denne headeren eksisterer allerede."
+  },
+  "emptyState": {
+    "message": "Ingen lagrede headere."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Noen headere kan kanskje ikke anvendes."
+  },
+  "btnDelete": {
+    "message": "Slett"
+  }
+}

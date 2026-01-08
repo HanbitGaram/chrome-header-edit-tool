@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Modificador de encabezados"
+  },
+  "extDescription": {
+    "message": "Extensión para agregar o eliminar encabezados de solicitud y respuesta HTTP"
+  },
+  "appTitle": {
+    "message": "Modificador de encabezados simple"
+  },
+  "tabRequest": {
+    "message": "Encabezados de solicitud"
+  },
+  "tabResponse": {
+    "message": "Encabezados de respuesta"
+  },
+  "addRequestHeader": {
+    "message": "Agregar encabezado de solicitud"
+  },
+  "addResponseHeader": {
+    "message": "Agregar encabezado de respuesta"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nombre del encabezado (ej: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valor del encabezado"
+  },
+  "btnAdd": {
+    "message": "Agregar"
+  },
+  "savedRequestHeaders": {
+    "message": "Encabezados de solicitud guardados"
+  },
+  "savedResponseHeaders": {
+    "message": "Encabezados de respuesta guardados"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Importante:</strong> Es posible que algunos encabezados no se apliquen según la situación."
+  },
+  "btnChangeLanguage": {
+    "message": "Cambiar idioma"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nombre del encabezado (ej: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Se aplica automáticamente a todas las pestañas"
+  },
+  "alertEmptyFields": {
+    "message": "Por favor ingrese el nombre y valor del encabezado."
+  },
+  "alertDuplicate": {
+    "message": "Este encabezado ya existe."
+  },
+  "emptyState": {
+    "message": "No hay encabezados guardados."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Es posible que algunos encabezados no se apliquen."
+  },
+  "btnDelete": {
+    "message": "Eliminar"
+  }
+}

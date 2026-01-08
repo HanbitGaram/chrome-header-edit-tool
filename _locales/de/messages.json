@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Header-Modifikator"
+  },
+  "extDescription": {
+    "message": "Erweiterung zum Hinzufügen oder Entfernen von HTTP-Anforderungs- und Antwortheadern"
+  },
+  "appTitle": {
+    "message": "Einfacher Header-Modifikator"
+  },
+  "tabRequest": {
+    "message": "Anforderungsheader"
+  },
+  "tabResponse": {
+    "message": "Antwortheader"
+  },
+  "addRequestHeader": {
+    "message": "Anforderungsheader hinzufügen"
+  },
+  "addResponseHeader": {
+    "message": "Antwortheader hinzufügen"
+  },
+  "headerNamePlaceholder": {
+    "message": "Header-Name (z.B.: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Header-Wert"
+  },
+  "btnAdd": {
+    "message": "Hinzufügen"
+  },
+  "savedRequestHeaders": {
+    "message": "Gespeicherte Anforderungsheader"
+  },
+  "savedResponseHeaders": {
+    "message": "Gespeicherte Antwortheader"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Wichtig:</strong> Einige Header werden möglicherweise je nach Situation nicht angewendet."
+  },
+  "btnChangeLanguage": {
+    "message": "Sprache ändern"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Header-Name (z.B.: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Wird automatisch auf alle Tabs angewendet"
+  },
+  "alertEmptyFields": {
+    "message": "Bitte geben Sie sowohl den Header-Namen als auch den Wert ein."
+  },
+  "alertDuplicate": {
+    "message": "Dieser Header existiert bereits."
+  },
+  "emptyState": {
+    "message": "Keine gespeicherten Header."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Einige Header werden möglicherweise nicht angewendet."
+  },
+  "btnDelete": {
+    "message": "Löschen"
+  }
+}

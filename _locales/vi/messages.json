@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Trình sửa đổi Header"
+  },
+  "extDescription": {
+    "message": "Tiện ích mở rộng để thêm hoặc xóa header yêu cầu và phản hồi HTTP"
+  },
+  "appTitle": {
+    "message": "Trình sửa đổi Header đơn giản"
+  },
+  "tabRequest": {
+    "message": "Header yêu cầu"
+  },
+  "tabResponse": {
+    "message": "Header phản hồi"
+  },
+  "addRequestHeader": {
+    "message": "Thêm Header yêu cầu"
+  },
+  "addResponseHeader": {
+    "message": "Thêm Header phản hồi"
+  },
+  "headerNamePlaceholder": {
+    "message": "Tên header (ví dụ: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Giá trị header"
+  },
+  "btnAdd": {
+    "message": "Thêm"
+  },
+  "savedRequestHeaders": {
+    "message": "Header yêu cầu đã lưu"
+  },
+  "savedResponseHeaders": {
+    "message": "Header phản hồi đã lưu"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Quan trọng:</strong> Một số header có thể không được áp dụng tùy thuộc vào tình huống."
+  },
+  "btnChangeLanguage": {
+    "message": "Đổi ngôn ngữ"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Tên header (ví dụ: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Tự động áp dụng cho tất cả các tab"
+  },
+  "alertEmptyFields": {
+    "message": "Vui lòng nhập tên và giá trị header."
+  },
+  "alertDuplicate": {
+    "message": "Header này đã tồn tại."
+  },
+  "emptyState": {
+    "message": "Không có header đã lưu."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Một số header có thể không được áp dụng."
+  },
+  "btnDelete": {
+    "message": "Xóa"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "请求头修改器"
+  },
+  "extDescription": {
+    "message": "可以添加或删除HTTP请求和响应标头的扩展程序"
+  },
+  "appTitle": {
+    "message": "简易请求头修改器"
+  },
+  "tabRequest": {
+    "message": "请求标头"
+  },
+  "tabResponse": {
+    "message": "响应标头"
+  },
+  "addRequestHeader": {
+    "message": "添加请求标头"
+  },
+  "addResponseHeader": {
+    "message": "添加响应标头"
+  },
+  "headerNamePlaceholder": {
+    "message": "标头名称（例如：User-Agent）"
+  },
+  "headerValuePlaceholder": {
+    "message": "标头值"
+  },
+  "btnAdd": {
+    "message": "添加"
+  },
+  "savedRequestHeaders": {
+    "message": "已保存的请求标头"
+  },
+  "savedResponseHeaders": {
+    "message": "已保存的响应标头"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>重要：</strong>某些标头可能根据情况不会生效。"
+  },
+  "btnChangeLanguage": {
+    "message": "更改语言"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "标头名称（例如：access-control-allow-origin）"
+  },
+  "infoMessage": {
+    "message": "💡 自动应用于所有标签页"
+  },
+  "alertEmptyFields": {
+    "message": "请输入标头名称和值。"
+  },
+  "alertDuplicate": {
+    "message": "此标头已存在。"
+  },
+  "emptyState": {
+    "message": "没有保存的标头。"
+  },
+  "warningNotApplied": {
+    "message": "🚨 某些标头可能不会生效。"
+  },
+  "btnDelete": {
+    "message": "删除"
+  }
+}

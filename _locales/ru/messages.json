@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Модификатор заголовков"
+  },
+  "extDescription": {
+    "message": "Расширение для добавления или удаления заголовков HTTP-запросов и ответов"
+  },
+  "appTitle": {
+    "message": "Простой модификатор заголовков"
+  },
+  "tabRequest": {
+    "message": "Заголовки запросов"
+  },
+  "tabResponse": {
+    "message": "Заголовки ответов"
+  },
+  "addRequestHeader": {
+    "message": "Добавить заголовок запроса"
+  },
+  "addResponseHeader": {
+    "message": "Добавить заголовок ответа"
+  },
+  "headerNamePlaceholder": {
+    "message": "Имя заголовка (например: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Значение заголовка"
+  },
+  "btnAdd": {
+    "message": "Добавить"
+  },
+  "savedRequestHeaders": {
+    "message": "Сохранённые заголовки запросов"
+  },
+  "savedResponseHeaders": {
+    "message": "Сохранённые заголовки ответов"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Важно:</strong> Некоторые заголовки могут не применяться в зависимости от ситуации."
+  },
+  "btnChangeLanguage": {
+    "message": "Изменить язык"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Имя заголовка (например: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Автоматически применяется ко всем вкладкам"
+  },
+  "alertEmptyFields": {
+    "message": "Пожалуйста, введите имя и значение заголовка."
+  },
+  "alertDuplicate": {
+    "message": "Этот заголовок уже существует."
+  },
+  "emptyState": {
+    "message": "Нет сохранённых заголовков."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Некоторые заголовки могут не применяться."
+  },
+  "btnDelete": {
+    "message": "Удалить"
+  }
+}

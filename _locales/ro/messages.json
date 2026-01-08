@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Modificator de anteturi"
+  },
+  "extDescription": {
+    "message": "Extensie pentru adăugarea sau ștergerea anteturilor de cerere și răspuns HTTP"
+  },
+  "appTitle": {
+    "message": "Modificator simplu de anteturi"
+  },
+  "tabRequest": {
+    "message": "Anteturi de cerere"
+  },
+  "tabResponse": {
+    "message": "Anteturi de răspuns"
+  },
+  "addRequestHeader": {
+    "message": "Adaugă antet de cerere"
+  },
+  "addResponseHeader": {
+    "message": "Adaugă antet de răspuns"
+  },
+  "headerNamePlaceholder": {
+    "message": "Numele antetului (ex: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valoarea antetului"
+  },
+  "btnAdd": {
+    "message": "Adaugă"
+  },
+  "savedRequestHeaders": {
+    "message": "Anteturi de cerere salvate"
+  },
+  "savedResponseHeaders": {
+    "message": "Anteturi de răspuns salvate"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Important:</strong> Este posibil ca unele anteturi să nu fie aplicate în funcție de situație."
+  },
+  "btnChangeLanguage": {
+    "message": "Schimbă limba"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Numele antetului (ex: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Se aplică automat tuturor filelor"
+  },
+  "alertEmptyFields": {
+    "message": "Vă rugăm să introduceți numele și valoarea antetului."
+  },
+  "alertDuplicate": {
+    "message": "Acest antet există deja."
+  },
+  "emptyState": {
+    "message": "Niciun antet salvat."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Este posibil ca unele anteturi să nu fie aplicate."
+  },
+  "btnDelete": {
+    "message": "Șterge"
+  }
+}

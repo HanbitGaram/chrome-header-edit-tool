@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Tagapagbago ng Header"
+  },
+  "extDescription": {
+    "message": "Extension para magdagdag o magtanggal ng HTTP request at response headers"
+  },
+  "appTitle": {
+    "message": "Simpleng Tagapagbago ng Header"
+  },
+  "tabRequest": {
+    "message": "Request Headers"
+  },
+  "tabResponse": {
+    "message": "Response Headers"
+  },
+  "addRequestHeader": {
+    "message": "Magdagdag ng Request Header"
+  },
+  "addResponseHeader": {
+    "message": "Magdagdag ng Response Header"
+  },
+  "headerNamePlaceholder": {
+    "message": "Pangalan ng header (halimbawa: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Halaga ng header"
+  },
+  "btnAdd": {
+    "message": "Idagdag"
+  },
+  "savedRequestHeaders": {
+    "message": "Naka-save na Request Headers"
+  },
+  "savedResponseHeaders": {
+    "message": "Naka-save na Response Headers"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Mahalaga:</strong> Ang ilang headers ay maaaring hindi ma-apply depende sa sitwasyon."
+  },
+  "btnChangeLanguage": {
+    "message": "Baguhin ang wika"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Pangalan ng header (halimbawa: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Awtomatikong inilalapat sa lahat ng tabs"
+  },
+  "alertEmptyFields": {
+    "message": "Pakipasok ang pangalan at halaga ng header."
+  },
+  "alertDuplicate": {
+    "message": "Umiiral na ang header na ito."
+  },
+  "emptyState": {
+    "message": "Walang naka-save na headers."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Ang ilang headers ay maaaring hindi ma-apply."
+  },
+  "btnDelete": {
+    "message": "Tanggalin"
+  }
+}

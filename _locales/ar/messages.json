@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "معدل الرؤوس"
+  },
+  "extDescription": {
+    "message": "امتداد لإضافة أو إزالة رؤوس طلبات واستجابات HTTP"
+  },
+  "appTitle": {
+    "message": "معدل الرؤوس البسيط"
+  },
+  "tabRequest": {
+    "message": "رؤوس الطلبات"
+  },
+  "tabResponse": {
+    "message": "رؤوس الاستجابات"
+  },
+  "addRequestHeader": {
+    "message": "إضافة رأس طلب"
+  },
+  "addResponseHeader": {
+    "message": "إضافة رأس استجابة"
+  },
+  "headerNamePlaceholder": {
+    "message": "اسم الرأس (مثال: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "قيمة الرأس"
+  },
+  "btnAdd": {
+    "message": "إضافة"
+  },
+  "savedRequestHeaders": {
+    "message": "رؤوس الطلبات المحفوظة"
+  },
+  "savedResponseHeaders": {
+    "message": "رؤوس الاستجابات المحفوظة"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>مهم:</strong> قد لا يتم تطبيق بعض الرؤوس حسب الوضع."
+  },
+  "btnChangeLanguage": {
+    "message": "تغيير اللغة"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "اسم الرأس (مثال: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 يتم التطبيق تلقائياً على جميع علامات التبويب"
+  },
+  "alertEmptyFields": {
+    "message": "يرجى إدخال اسم الرأس والقيمة."
+  },
+  "alertDuplicate": {
+    "message": "هذا الرأس موجود بالفعل."
+  },
+  "emptyState": {
+    "message": "لا توجد رؤوس محفوظة."
+  },
+  "warningNotApplied": {
+    "message": "🚨 قد لا يتم تطبيق بعض الرؤوس."
+  },
+  "btnDelete": {
+    "message": "حذف"
+  }
+}

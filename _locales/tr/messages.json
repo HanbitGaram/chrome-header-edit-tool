@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Başlık Değiştirici"
+  },
+  "extDescription": {
+    "message": "HTTP istek ve yanıt başlıklarını eklemek veya kaldırmak için uzantı"
+  },
+  "appTitle": {
+    "message": "Basit Başlık Değiştirici"
+  },
+  "tabRequest": {
+    "message": "İstek başlıkları"
+  },
+  "tabResponse": {
+    "message": "Yanıt başlıkları"
+  },
+  "addRequestHeader": {
+    "message": "İstek başlığı ekle"
+  },
+  "addResponseHeader": {
+    "message": "Yanıt başlığı ekle"
+  },
+  "headerNamePlaceholder": {
+    "message": "Başlık adı (örnek: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Başlık değeri"
+  },
+  "btnAdd": {
+    "message": "Ekle"
+  },
+  "savedRequestHeaders": {
+    "message": "Kaydedilmiş istek başlıkları"
+  },
+  "savedResponseHeaders": {
+    "message": "Kaydedilmiş yanıt başlıkları"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Önemli:</strong> Duruma göre bazı başlıklar uygulanmayabilir."
+  },
+  "btnChangeLanguage": {
+    "message": "Dili değiştir"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Başlık adı (örnek: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Tüm sekmelere otomatik olarak uygulanır"
+  },
+  "alertEmptyFields": {
+    "message": "Lütfen başlık adını ve değerini girin."
+  },
+  "alertDuplicate": {
+    "message": "Bu başlık zaten mevcut."
+  },
+  "emptyState": {
+    "message": "Kaydedilmiş başlık yok."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Bazı başlıklar uygulanmayabilir."
+  },
+  "btnDelete": {
+    "message": "Sil"
+  }
+}

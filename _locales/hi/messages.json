@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "हेडर संशोधक"
+  },
+  "extDescription": {
+    "message": "HTTP अनुरोध और प्रतिक्रिया हेडर जोड़ने या हटाने के लिए एक्सटेंशन"
+  },
+  "appTitle": {
+    "message": "सरल हेडर संशोधक"
+  },
+  "tabRequest": {
+    "message": "अनुरोध हेडर"
+  },
+  "tabResponse": {
+    "message": "प्रतिक्रिया हेडर"
+  },
+  "addRequestHeader": {
+    "message": "अनुरोध हेडर जोड़ें"
+  },
+  "addResponseHeader": {
+    "message": "प्रतिक्रिया हेडर जोड़ें"
+  },
+  "headerNamePlaceholder": {
+    "message": "हेडर का नाम (उदाहरण: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "हेडर का मान"
+  },
+  "btnAdd": {
+    "message": "जोड़ें"
+  },
+  "savedRequestHeaders": {
+    "message": "सहेजे गए अनुरोध हेडर"
+  },
+  "savedResponseHeaders": {
+    "message": "सहेजे गए प्रतिक्रिया हेडर"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>महत्वपूर्ण:</strong> स्थिति के आधार पर कुछ हेडर लागू नहीं हो सकते हैं।"
+  },
+  "btnChangeLanguage": {
+    "message": "भाषा बदलें"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "हेडर का नाम (उदाहरण: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 सभी टैब पर स्वचालित रूप से लागू होता है"
+  },
+  "alertEmptyFields": {
+    "message": "कृपया हेडर का नाम और मान दर्ज करें।"
+  },
+  "alertDuplicate": {
+    "message": "यह हेडर पहले से मौजूद है।"
+  },
+  "emptyState": {
+    "message": "कोई सहेजे गए हेडर नहीं हैं।"
+  },
+  "warningNotApplied": {
+    "message": "🚨 कुछ हेडर लागू नहीं हो सकते हैं।"
+  },
+  "btnDelete": {
+    "message": "हटाएं"
+  }
+}

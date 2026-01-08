@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Header Modifier"
+  },
+  "extDescription": {
+    "message": "Extension to add or remove HTTP request and response headers"
+  },
+  "appTitle": {
+    "message": "Simple Header Modifier"
+  },
+  "tabRequest": {
+    "message": "Request Headers"
+  },
+  "tabResponse": {
+    "message": "Response Headers"
+  },
+  "addRequestHeader": {
+    "message": "Add Request Header"
+  },
+  "addResponseHeader": {
+    "message": "Add Response Header"
+  },
+  "headerNamePlaceholder": {
+    "message": "Header name (e.g., User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Header value"
+  },
+  "btnAdd": {
+    "message": "Add"
+  },
+  "savedRequestHeaders": {
+    "message": "Saved Request Headers"
+  },
+  "savedResponseHeaders": {
+    "message": "Saved Response Headers"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Important:</strong> Some headers may not be applied depending on the situation."
+  },
+  "btnChangeLanguage": {
+    "message": "Change Language"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Header name (e.g., access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automatically applied to all tabs"
+  },
+  "alertEmptyFields": {
+    "message": "Please enter both header name and value."
+  },
+  "alertDuplicate": {
+    "message": "This header already exists."
+  },
+  "emptyState": {
+    "message": "No saved headers."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Some headers may not be applied."
+  },
+  "btnDelete": {
+    "message": "Delete"
+  }
+}

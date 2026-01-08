@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "ヘッダー変更ツール"
+  },
+  "extDescription": {
+    "message": "HTTPリクエストおよびレスポンスヘッダーを追加または削除できる拡張機能"
+  },
+  "appTitle": {
+    "message": "簡単ヘッダー変更ツール"
+  },
+  "tabRequest": {
+    "message": "リクエストヘッダー"
+  },
+  "tabResponse": {
+    "message": "レスポンスヘッダー"
+  },
+  "addRequestHeader": {
+    "message": "リクエストヘッダーを追加"
+  },
+  "addResponseHeader": {
+    "message": "レスポンスヘッダーを追加"
+  },
+  "headerNamePlaceholder": {
+    "message": "ヘッダー名 (例: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "ヘッダー値"
+  },
+  "btnAdd": {
+    "message": "追加"
+  },
+  "savedRequestHeaders": {
+    "message": "保存されたリクエストヘッダー"
+  },
+  "savedResponseHeaders": {
+    "message": "保存されたレスポンスヘッダー"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>重要:</strong> 一部のヘッダーは状況によって適用されない場合があります。"
+  },
+  "btnChangeLanguage": {
+    "message": "言語を変更"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "ヘッダー名 (例: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 すべてのタブに自動的に適用されます"
+  },
+  "alertEmptyFields": {
+    "message": "ヘッダー名と値の両方を入力してください。"
+  },
+  "alertDuplicate": {
+    "message": "このヘッダーはすでに存在します。"
+  },
+  "emptyState": {
+    "message": "保存されたヘッダーはありません。"
+  },
+  "warningNotApplied": {
+    "message": "🚨 一部のヘッダーは適用されない可能性があります。"
+  },
+  "btnDelete": {
+    "message": "削除"
+  }
+}

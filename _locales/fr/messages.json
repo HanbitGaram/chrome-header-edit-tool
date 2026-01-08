@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Modificateur d'en-têtes"
+  },
+  "extDescription": {
+    "message": "Extension pour ajouter ou supprimer des en-têtes de requête et de réponse HTTP"
+  },
+  "appTitle": {
+    "message": "Modificateur d'en-têtes simple"
+  },
+  "tabRequest": {
+    "message": "En-têtes de requête"
+  },
+  "tabResponse": {
+    "message": "En-têtes de réponse"
+  },
+  "addRequestHeader": {
+    "message": "Ajouter un en-tête de requête"
+  },
+  "addResponseHeader": {
+    "message": "Ajouter un en-tête de réponse"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nom de l'en-tête (ex: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valeur de l'en-tête"
+  },
+  "btnAdd": {
+    "message": "Ajouter"
+  },
+  "savedRequestHeaders": {
+    "message": "En-têtes de requête enregistrés"
+  },
+  "savedResponseHeaders": {
+    "message": "En-têtes de réponse enregistrés"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Important:</strong> Certains en-têtes peuvent ne pas être appliqués selon la situation."
+  },
+  "btnChangeLanguage": {
+    "message": "Changer de langue"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nom de l'en-tête (ex: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Appliqué automatiquement à tous les onglets"
+  },
+  "alertEmptyFields": {
+    "message": "Veuillez saisir le nom et la valeur de l'en-tête."
+  },
+  "alertDuplicate": {
+    "message": "Cet en-tête existe déjà."
+  },
+  "emptyState": {
+    "message": "Aucun en-tête enregistré."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Certains en-têtes peuvent ne pas être appliqués."
+  },
+  "btnDelete": {
+    "message": "Supprimer"
+  }
+}
