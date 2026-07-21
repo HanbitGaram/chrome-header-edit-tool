@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "삭제"
+  },
+  "siteOnlyLabel": {
+    "message": "이 사이트에서만 적용"
+  },
+  "sourceCode": {
+    "message": "소스코드"
   }
 }

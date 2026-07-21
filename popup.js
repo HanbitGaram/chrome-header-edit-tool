@@ -1,20 +1,20 @@
-// 현재 로드된 메시지
+// Currently loaded messages
 let currentMessages = {};
 
-// 언어별 메시지 로드
+// Load messages for a language
 async function loadMessages(lang) {
   try {
     const response = await fetch(
-      chrome.runtime.getURL(`_locales/${lang}/messages.json`)
+      chrome.runtime.getURL(`_locales/${lang}/messages.json`),
     );
     const messages = await response.json();
     currentMessages = messages;
     return messages;
   } catch (error) {
     console.error(`Failed to load messages for ${lang}:`, error);
-    // 기본 언어로 폴백
+    // Fall back to the default language
     const fallbackResponse = await fetch(
-      chrome.runtime.getURL(`_locales/en/messages.json`)
+      chrome.runtime.getURL(`_locales/en/messages.json`),
     );
     const fallbackMessages = await fallbackResponse.json();
     currentMessages = fallbackMessages;
@@ -22,89 +22,99 @@ async function loadMessages(lang) {
   }
 }
 
-// 메시지 가져오기
+// Get a message by key
 function getMessage(key) {
   return currentMessages[key]?.message || key;
 }
 
-// i18n 초기화 함수
+// Initialize i18n
 async function initializeI18n() {
-  // 저장된 언어 가져오기
+  // Get the saved language
   const storage = await chrome.storage.local.get(["selectedLanguage"]);
   const uiLang = chrome.i18n.getUILanguage();
   let defaultLang = uiLang.split("-")[0];
 
-  // zh-CN, zh-TW 처리
+  // Handle locales with regional variants (zh-CN, zh-TW, pt-BR, pt-PT)
   if (uiLang.startsWith("zh")) {
     defaultLang = uiLang.replace("-", "_");
+  } else if (defaultLang === "pt") {
+    defaultLang = uiLang === "pt-BR" ? "pt_BR" : "pt_PT";
   }
 
   const selectedLang = storage.selectedLanguage || defaultLang;
 
-  // 메시지 로드
+  // Load messages
   await loadMessages(selectedLang);
 
-  // data-i18n 속성을 가진 모든 요소들의 textContent 설정
+  // Set textContent for all elements with a data-i18n attribute
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
     element.textContent = getMessage(key);
   });
 
-  // data-i18n-placeholder 속성을 가진 모든 요소들의 placeholder 설정
+  // Set placeholder for all elements with a data-i18n-placeholder attribute
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const key = element.getAttribute("data-i18n-placeholder");
     element.placeholder = getMessage(key);
   });
 
-  // data-i18n-html 속성을 가진 모든 요소들의 innerHTML 설정
+  // Set innerHTML for all elements with a data-i18n-html attribute
   document.querySelectorAll("[data-i18n-html]").forEach((element) => {
     const key = element.getAttribute("data-i18n-html");
     element.innerHTML = getMessage(key);
   });
 
-  // 언어 선택기 초기화
+  // Set title (tooltip) for all elements with a data-i18n-title attribute
+  document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-title");
+    element.title = getMessage(key);
+  });
+
+  // Initialize the language selector
   await initLanguageSelector();
 }
 
-// 언어 선택기 초기화
+// Initialize the language selector
 async function initLanguageSelector() {
   const langSelect = document.getElementById("lang-select");
   const langBtn = document.getElementById("lang-btn");
 
-  // 저장된 언어 가져오기
+  // Get the saved language
   const storage = await chrome.storage.local.get(["selectedLanguage"]);
   const uiLang = chrome.i18n.getUILanguage();
   let defaultLang = uiLang.split("-")[0];
 
-  // zh-CN, zh-TW 처리
+  // Handle locales with regional variants (zh-CN, zh-TW, pt-BR, pt-PT)
   if (uiLang.startsWith("zh")) {
     defaultLang = uiLang.replace("-", "_");
+  } else if (defaultLang === "pt") {
+    defaultLang = uiLang === "pt-BR" ? "pt_BR" : "pt_PT";
   }
 
   const currentLang = storage.selectedLanguage || defaultLang;
 
-  // 현재 언어 선택
+  // Select the current language
   if (langSelect.querySelector(`option[value="${currentLang}"]`)) {
     langSelect.value = currentLang;
   }
 
-  // 버튼 클릭시 선택기 토글
+  // Toggle the selector on button click
   langBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     langSelect.classList.toggle("show");
   });
 
-  // 언어 변경
+  // Change language
   langSelect.addEventListener("change", async (e) => {
     const newLang = e.target.value;
 
-    // 언어 저장
+    // Save the language
     await chrome.storage.local.set({ selectedLanguage: newLang });
 
-    // 메시지 리로드
+    // Reload messages
     await loadMessages(newLang);
 
-    // UI 업데이트
+    // Update the UI
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
       element.textContent = getMessage(key);
@@ -120,13 +130,18 @@ async function initLanguageSelector() {
       element.innerHTML = getMessage(key);
     });
 
+    document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+      const key = element.getAttribute("data-i18n-title");
+      element.title = getMessage(key);
+    });
+
     langSelect.classList.remove("show");
 
-    // 헤더 목록 다시 로드 (번역된 텍스트 적용)
+    // Reload the header list (apply translated text)
     loadHeaders();
   });
 
-  // 외부 클릭시 닫기
+  // Close when clicking outside
   document.addEventListener("click", (e) => {
     if (!langBtn.contains(e.target) && !langSelect.contains(e.target)) {
       langSelect.classList.remove("show");
@@ -134,49 +149,67 @@ async function initLanguageSelector() {
   });
 }
 
-// 페이지 로드시 i18n 초기화
+// Initialize i18n on page load
 initializeI18n();
 
-// 탭 전환 기능
+// Tab switching
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const tabName = btn.dataset.tab;
 
-    // 모든 탭 버튼 비활성화
+    // Deactivate all tab buttons
     document
       .querySelectorAll(".tab-btn")
       .forEach((b) => b.classList.remove("active"));
-    // 모든 탭 콘텐츠 숨기기
+    // Hide all tab contents
     document
       .querySelectorAll(".tab-content")
       .forEach((c) => c.classList.remove("active"));
 
-    // 선택된 탭 활성화
+    // Activate the selected tab
     btn.classList.add("active");
     document.getElementById(`${tabName}-tab`).classList.add("active");
   });
 });
 
-// 요청 헤더 추가
+// Get the active tab's domain (empty for non-web pages such as chrome://)
+async function getActiveTabDomain() {
+  try {
+    const [tab] = await chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    });
+    const url = new URL(tab.url);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+    return url.hostname;
+  } catch (error) {
+    return "";
+  }
+}
+
+// Add a request header
 document.getElementById("add-req-btn").addEventListener("click", async () => {
   const name = document.getElementById("req-name").value.trim();
   const value = document.getElementById("req-value").value.trim();
+  const siteOnly = document.getElementById("req-site-only").checked;
 
   if (!name || !value) {
     alert(getMessage("alertEmptyFields"));
     return;
   }
 
-  await addHeader("request", name, value);
+  const sites = siteOnly ? await getActiveTabDomain() : "";
+  await addHeader("request", name, value, sites);
 
-  // 입력 필드 초기화
+  // Reset input fields
   document.getElementById("req-name").value = "";
   document.getElementById("req-value").value = "";
+  document.getElementById("req-site-only").checked = false;
 
   loadHeaders();
 });
 
-// Chrome에서 수정 가능한 response 헤더 목록
+// Response headers modifiable by Chrome
 const MODIFIABLE_RESPONSE_HEADERS = [
   "access-control-allow-origin",
   "access-control-allow-credentials",
@@ -193,59 +226,62 @@ const MODIFIABLE_RESPONSE_HEADERS = [
   "x-frame-options",
 ];
 
-// 응답 헤더 추가
+// Add a response header
 document.getElementById("add-res-btn").addEventListener("click", async () => {
   const name = document.getElementById("res-name").value.trim();
   const value = document.getElementById("res-value").value.trim();
+  const siteOnly = document.getElementById("res-site-only").checked;
 
   if (!name || !value) {
     alert(getMessage("alertEmptyFields"));
     return;
   }
 
-  // Response 헤더 검증
+  // Validate response header
   // if (!MODIFIABLE_RESPONSE_HEADERS.includes(name.toLowerCase())) {
   //   const proceed = confirm(
-  //     `⚠️ 경고: "${name}" 헤더는 Chrome에서 수정하지 못할 수 있습니다.\n\n` +
-  //       `수정 가능한 Response 헤더:\n${MODIFIABLE_RESPONSE_HEADERS.join(
+  //     `⚠️ Warning: the "${name}" header may not be modifiable by Chrome.\n\n` +
+  //       `Modifiable response headers:\n${MODIFIABLE_RESPONSE_HEADERS.join(
   //         "\n"
   //       )}\n\n` +
-  //       `그래도 추가하시겠습니까? (적용되지 않습니다)`
+  //       `Add it anyway? (It will not be applied)`
   //   );
   //   if (!proceed) return;
   // }
 
-  await addHeader("response", name, value);
+  const sites = siteOnly ? await getActiveTabDomain() : "";
+  await addHeader("response", name, value, sites);
 
-  // 입력 필드 초기화
+  // Reset input fields
   document.getElementById("res-name").value = "";
   document.getElementById("res-value").value = "";
+  document.getElementById("res-site-only").checked = false;
 
   loadHeaders();
 });
 
-// 헤더 추가 함수
-async function addHeader(type, name, value) {
+// Add a header
+async function addHeader(type, name, value, sites = "") {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
 
-  // 중복 체크
+  // Check for duplicates
   const exists = headers.some(
-    (h) => h.name.toLowerCase() === name.toLowerCase()
+    (h) => h.name.toLowerCase() === name.toLowerCase(),
   );
   if (exists) {
     alert(getMessage("alertDuplicate"));
     return;
   }
 
-  headers.push({ name, value, enabled: true });
+  headers.push({ name, value, sites, enabled: true });
   await chrome.storage.local.set({ [`${type}Headers`]: headers });
 
-  // background script에 업데이트 알림
+  // Notify the background script to update rules
   chrome.runtime.sendMessage({ action: "updateRules" });
 }
 
-// 헤더 온오프 토글 함수
+// Toggle a header on/off
 async function toggleHeader(type, index, enabled) {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
@@ -254,22 +290,22 @@ async function toggleHeader(type, index, enabled) {
     headers[index].enabled = enabled;
     await chrome.storage.local.set({ [`${type}Headers`]: headers });
 
-    // background script에 업데이트 알림
+    // Notify the background script to update rules
     chrome.runtime.sendMessage({ action: "updateRules" });
 
     loadHeaders();
   }
 }
 
-// 헤더 이름 수정 함수
+// Update a header name
 async function updateHeaderName(type, index, newName) {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
 
   if (headers[index]) {
-    // 중복 체크 (자기 자신 제외)
+    // Check for duplicates (excluding itself)
     const exists = headers.some(
-      (h, i) => i !== index && h.name.toLowerCase() === newName.toLowerCase()
+      (h, i) => i !== index && h.name.toLowerCase() === newName.toLowerCase(),
     );
     if (exists) {
       alert(getMessage("alertDuplicate"));
@@ -280,14 +316,30 @@ async function updateHeaderName(type, index, newName) {
     headers[index].name = newName;
     await chrome.storage.local.set({ [`${type}Headers`]: headers });
 
-    // background script에 업데이트 알림
+    // Notify the background script to update rules
     chrome.runtime.sendMessage({ action: "updateRules" });
 
     loadHeaders();
   }
 }
 
-// 헤더 값 수정 함수
+// Update a header's site scope (empty = apply to all sites)
+async function updateHeaderSites(type, index, newSites) {
+  const storage = await chrome.storage.local.get([`${type}Headers`]);
+  const headers = storage[`${type}Headers`] || [];
+
+  if (headers[index]) {
+    headers[index].sites = newSites;
+    await chrome.storage.local.set({ [`${type}Headers`]: headers });
+
+    // Notify the background script to update rules
+    chrome.runtime.sendMessage({ action: "updateRules" });
+
+    loadHeaders();
+  }
+}
+
+// Update a header value
 async function updateHeaderValue(type, index, newValue) {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
@@ -296,14 +348,14 @@ async function updateHeaderValue(type, index, newValue) {
     headers[index].value = newValue;
     await chrome.storage.local.set({ [`${type}Headers`]: headers });
 
-    // background script에 업데이트 알림
+    // Notify the background script to update rules
     chrome.runtime.sendMessage({ action: "updateRules" });
 
     loadHeaders();
   }
 }
 
-// 헤더 삭제 함수 (인덱스 기반)
+// Delete a header by index
 async function deleteHeaderByIndex(type, index) {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
@@ -311,13 +363,13 @@ async function deleteHeaderByIndex(type, index) {
   headers.splice(index, 1);
   await chrome.storage.local.set({ [`${type}Headers`]: headers });
 
-  // background script에 업데이트 알림
+  // Notify the background script to update rules
   chrome.runtime.sendMessage({ action: "updateRules" });
 
   loadHeaders();
 }
 
-// 헤더 삭제 함수
+// Delete a header by name
 async function deleteHeader(type, name) {
   const storage = await chrome.storage.local.get([`${type}Headers`]);
   const headers = storage[`${type}Headers`] || [];
@@ -325,13 +377,13 @@ async function deleteHeader(type, name) {
   const filtered = headers.filter((h) => h.name !== name);
   await chrome.storage.local.set({ [`${type}Headers`]: filtered });
 
-  // background script에 업데이트 알림
+  // Notify the background script to update rules
   chrome.runtime.sendMessage({ action: "updateRules" });
 
   loadHeaders();
 }
 
-// 저장된 헤더 목록 로드
+// Load saved headers
 async function loadHeaders() {
   const storage = await chrome.storage.local.get([
     "requestHeaders",
@@ -341,20 +393,20 @@ async function loadHeaders() {
   const requestHeaders = storage.requestHeaders || [];
   const responseHeaders = storage.responseHeaders || [];
 
-  // 요청 헤더 렌더링
+  // Render request headers
   renderHeaders("req", requestHeaders);
 
-  // 응답 헤더 렌더링
+  // Render response headers
   renderHeaders("res", responseHeaders);
 }
 
-// 헤더 목록 렌더링
+// Render the header list
 function renderHeaders(prefix, headers) {
   const listElement = document.getElementById(`${prefix}-headers-list`);
 
   if (headers.length === 0) {
-    listElement.innerHTML = `<div class="empty-state">${getMessage(
-      "emptyState"
+    listElement.innerHTML = `<div class="empty-state" data-i18n="emptyState">${getMessage(
+      "emptyState",
     )}</div>`;
     return;
   }
@@ -363,12 +415,12 @@ function renderHeaders(prefix, headers) {
 
   listElement.innerHTML = headers
     .map((header, index) => {
-      // Response 헤더인 경우 수정 가능 여부 확인
+      // For response headers, check whether they are modifiable
       const isInvalid =
         type === "response" &&
         !MODIFIABLE_RESPONSE_HEADERS.includes(header.name.toLowerCase());
       const warningIcon = ""; //isInvalid ? " ⚠️" : "";
-      const isEnabled = header.enabled !== false; // undefined면 true로 처리
+      const isEnabled = header.enabled !== false; // treat undefined as true
 
       return `
       <div class="header-item ${!isEnabled ? "disabled" : ""}">
@@ -389,32 +441,49 @@ function renderHeaders(prefix, headers) {
             placeholder="Header Name"
             ${!isEnabled ? "disabled" : ""}
           />${warningIcon}
-          <input 
-            type="text" 
-            class="header-value-input" 
-            value="${escapeHtml(header.value)}" 
-            data-type="${type}" 
+          <input
+            type="text"
+            class="header-value-input"
+            value="${escapeHtml(header.value)}"
+            data-type="${type}"
             data-index="${index}"
             placeholder="Header Value"
             ${!isEnabled ? "disabled" : ""}
           />
+          <label class="site-scope item-site-scope" title="${escapeHtml(
+            getMessage("siteOnlyLabel"),
+          )}">
+            <input
+              type="checkbox"
+              class="header-site-toggle"
+              data-type="${type}"
+              data-index="${index}"
+              ${header.sites ? "checked" : ""}
+              ${!isEnabled ? "disabled" : ""}
+            />
+            <span class="site-chip">${
+              header.sites
+                ? `<span class="site-domain">${escapeHtml(header.sites)}</span>`
+                : ""
+            }</span>
+          </label>
           ${
             isInvalid
               ? `<div class="warning-text" data-i18n="warningNotApplied">${getMessage(
-                  "warningNotApplied"
+                  "warningNotApplied",
                 )}</div>`
               : ""
           }
         </div>
         <button class="delete-btn" data-type="${type}" data-i18n="btnDelete" data-index="${index}">${getMessage(
-        "btnDelete"
-      )}</button>
+          "btnDelete",
+        )}</button>
       </div>
     `;
     })
     .join("");
 
-  // 체크박스 이벤트 리스너 추가
+  // Add checkbox event listeners
   listElement.querySelectorAll(".header-toggle").forEach((checkbox) => {
     checkbox.addEventListener("change", async (e) => {
       const type = e.target.dataset.type;
@@ -423,7 +492,7 @@ function renderHeaders(prefix, headers) {
     });
   });
 
-  // 헤더 이름 변경 이벤트 리스너 추가
+  // Add header name change listeners
   listElement.querySelectorAll(".header-name-input").forEach((input) => {
     input.addEventListener("blur", async (e) => {
       const type = e.target.dataset.type;
@@ -432,10 +501,10 @@ function renderHeaders(prefix, headers) {
       if (newName) {
         await updateHeaderName(type, index, newName);
       } else {
-        loadHeaders(); // 빈 값이면 원래대로 복원
+        loadHeaders(); // restore original if empty
       }
     });
-    // Enter 키로도 저장
+    // Save on Enter key as well
     input.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.target.blur();
@@ -443,7 +512,7 @@ function renderHeaders(prefix, headers) {
     });
   });
 
-  // 헤더 값 변경 이벤트 리스너 추가
+  // Add header value change listeners
   listElement.querySelectorAll(".header-value-input").forEach((input) => {
     input.addEventListener("blur", async (e) => {
       const type = e.target.dataset.type;
@@ -452,10 +521,10 @@ function renderHeaders(prefix, headers) {
       if (newValue) {
         await updateHeaderValue(type, index, newValue);
       } else {
-        loadHeaders(); // 빈 값이면 원래대로 복원
+        loadHeaders(); // restore original if empty
       }
     });
-    // Enter 키로도 저장
+    // Save on Enter key as well
     input.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.target.blur();
@@ -463,7 +532,18 @@ function renderHeaders(prefix, headers) {
     });
   });
 
-  // 삭제 버튼 이벤트 리스너 추가
+  // Add "apply to this site only" toggle listeners
+  listElement.querySelectorAll(".header-site-toggle").forEach((checkbox) => {
+    checkbox.addEventListener("change", async (e) => {
+      const type = e.target.dataset.type;
+      const index = parseInt(e.target.dataset.index);
+      // Checked: apply only to the current tab's domain / unchecked: apply to all sites
+      const sites = e.target.checked ? await getActiveTabDomain() : "";
+      await updateHeaderSites(type, index, sites);
+    });
+  });
+
+  // Add delete button listeners
   listElement.querySelectorAll(".delete-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const type = btn.dataset.type;
@@ -473,7 +553,7 @@ function renderHeaders(prefix, headers) {
   });
 }
 
-// XSS 방지를 위한 HTML 이스케이프
+// Escape HTML to prevent XSS
 function escapeHtml(text) {
   const map = {
     "&": "&amp;",
@@ -485,5 +565,5 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, (m) => map[m]);
 }
 
-// 페이지 로드시 저장된 헤더 표시
+// Show saved headers on page load
 loadHeaders();

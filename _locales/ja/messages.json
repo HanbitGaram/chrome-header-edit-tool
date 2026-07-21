@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "削除"
+  },
+  "siteOnlyLabel": {
+    "message": "このサイトのみに適用"
+  },
+  "sourceCode": {
+    "message": "ソースコード"
   }
 }

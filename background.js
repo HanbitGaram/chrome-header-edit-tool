@@ -1,22 +1,22 @@
-// 확장 프로그램 설치시 초기화
+// Initialize on extension install
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("헤더 수정기 확장 프로그램이 설치되었습니다.");
+  console.log("Header editor extension installed.");
   updateRules();
 });
 
-// 확장 프로그램 시작시 규칙 업데이트
+// Update rules on browser startup
 chrome.runtime.onStartup.addListener(() => {
   updateRules();
 });
 
-// popup에서 메시지 받기
+// Receive messages from the popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "updateRules") {
     updateRules();
   }
 });
 
-// Chrome에서 수정 가능한 response 헤더 목록 (소문자)
+// Response headers modifiable by Chrome (lowercase)
 const MODIFIABLE_RESPONSE_HEADERS = [
   "access-control-allow-origin",
   "access-control-allow-credentials",
@@ -33,10 +33,59 @@ const MODIFIABLE_RESPONSE_HEADERS = [
   "x-frame-options",
 ];
 
-// declarativeNetRequest 규칙 업데이트
+// Convert a string like "example.com, api.foo.com" into an array of domains
+function parseSites(sites) {
+  if (!sites) return [];
+  return sites
+    .split(",")
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean)
+    .map((s) =>
+      s
+        .replace(/^https?:\/\//, "")
+        .replace(/^\*\./, "")
+        .split("/")[0]
+        .split(":")[0]
+    )
+    .filter(Boolean);
+}
+
+// Group headers by site scope (one rule per site group)
+function groupBySites(headers) {
+  const groups = new Map();
+  for (const header of headers) {
+    const domains = parseSites(header.sites);
+    const key = JSON.stringify([...domains].sort());
+    if (!groups.has(key)) {
+      groups.set(key, { domains, headers: [] });
+    }
+    groups.get(key).headers.push(header);
+  }
+  return [...groups.values()];
+}
+
+const ALL_RESOURCE_TYPES = [
+  "main_frame",
+  "sub_frame",
+  "stylesheet",
+  "script",
+  "image",
+  "font",
+  "object",
+  "xmlhttprequest",
+  "ping",
+  "csp_report",
+  "media",
+  "websocket",
+  "webtransport",
+  "webbundle",
+  "other",
+];
+
+// Update declarativeNetRequest rules
 async function updateRules() {
   try {
-    // 기존 규칙 삭제
+    // Remove existing rules
     const existingRules = await chrome.declarativeNetRequest.getDynamicRules();
     const ruleIds = existingRules.map((rule) => rule.id);
 
@@ -46,7 +95,7 @@ async function updateRules() {
       });
     }
 
-    // 저장된 헤더 가져오기
+    // Get saved headers
     const storage = await chrome.storage.local.get([
       "requestHeaders",
       "responseHeaders",
@@ -57,132 +106,96 @@ async function updateRules() {
     const newRules = [];
     let ruleId = 1;
 
-    // 요청 헤더 규칙 생성 (enabled가 true인 것만)
+    // Create request header rules (enabled only, grouped by site scope)
     const enabledRequestHeaders = requestHeaders.filter(
       (h) => h.enabled !== false
     );
-    if (enabledRequestHeaders.length > 0) {
+    for (const group of groupBySites(enabledRequestHeaders)) {
+      const condition = {
+        urlFilter: "*",
+        resourceTypes: ALL_RESOURCE_TYPES,
+      };
+      // If sites are specified, apply only to those domains (including subdomains)
+      if (group.domains.length > 0) {
+        condition.requestDomains = group.domains;
+      }
+
       newRules.push({
         id: ruleId++,
         priority: 1,
         action: {
           type: "modifyHeaders",
-          requestHeaders: enabledRequestHeaders.map((header) => ({
+          requestHeaders: group.headers.map((header) => ({
             header: header.name,
             operation: "set",
             value: header.value,
           })),
         },
-        condition: {
-          urlFilter: "*",
-          resourceTypes: [
-            "main_frame",
-            "sub_frame",
-            "stylesheet",
-            "script",
-            "image",
-            "font",
-            "object",
-            "xmlhttprequest",
-            "ping",
-            "csp_report",
-            "media",
-            "websocket",
-            "webtransport",
-            "webbundle",
-            "other",
-          ],
-        },
+        condition,
       });
     }
 
-    // 응답 헤더 규칙 생성 (enabled가 true인 것만)
+    // Create response header rules (enabled only, grouped by site scope)
     const enabledResponseHeaders = responseHeaders.filter(
       (h) => h.enabled !== false
     );
-    if (enabledResponseHeaders.length > 0) {
-      // 수정 가능한 헤더만 필터링
-      const validResponseHeaders = enabledResponseHeaders.filter((header) => {
-        const isValid = MODIFIABLE_RESPONSE_HEADERS.includes(
-          header.name.toLowerCase()
-        );
-        if (!isValid) {
-          console.warn(
-            `⚠️ 경고: "${
-              header.name
-            }" 헤더는 Chrome에서 수정할 수 없습니다. 수정 가능한 헤더: ${MODIFIABLE_RESPONSE_HEADERS.join(
-              ", "
-            )}`
-          );
-        }
-        // return isValid;
-      });
-
-      if (enabledResponseHeaders.length > 0) {
-        newRules.push({
-          id: ruleId++,
-          priority: 1,
-          action: {
-            type: "modifyHeaders",
-            responseHeaders: enabledResponseHeaders.map((header) => ({
-              header: header.name.toLowerCase(),
-              operation: "set",
-              value: header.value,
-            })),
-          },
-          condition: {
-            urlFilter: "|http*://*/*",
-            resourceTypes: [
-              // "main_frame", "sub_frame", "xmlhttprequest"
-              "main_frame",
-              "sub_frame",
-              "stylesheet",
-              "script",
-              "image",
-              "font",
-              "object",
-              "xmlhttprequest",
-              "ping",
-              "csp_report",
-              "media",
-              "websocket",
-              "webtransport",
-              "webbundle",
-              "other",
-            ],
-          },
-        });
-
-        console.log(
-          `✅ Response 헤더 규칙 생성됨: ${enabledResponseHeaders.length}개`
-        );
-      } else if (responseHeaders.length > 0) {
-        console.error(
-          `❌ ${responseHeaders.length}개의 response 헤더가 모두 Chrome에서 지원되지 않습니다.`
+    for (const header of enabledResponseHeaders) {
+      if (!MODIFIABLE_RESPONSE_HEADERS.includes(header.name.toLowerCase())) {
+        console.warn(
+          `⚠️ Warning: the "${
+            header.name
+          }" header may not be modifiable by Chrome. Modifiable headers: ${MODIFIABLE_RESPONSE_HEADERS.join(
+            ", "
+          )}`
         );
       }
     }
 
-    // 새 규칙 추가
+    for (const group of groupBySites(enabledResponseHeaders)) {
+      const condition = {
+        urlFilter: "|http*://*/*",
+        resourceTypes: ALL_RESOURCE_TYPES,
+      };
+      // If sites are specified, apply only to those domains (including subdomains)
+      if (group.domains.length > 0) {
+        condition.requestDomains = group.domains;
+      }
+
+      newRules.push({
+        id: ruleId++,
+        priority: 1,
+        action: {
+          type: "modifyHeaders",
+          responseHeaders: group.headers.map((header) => ({
+            header: header.name.toLowerCase(),
+            operation: "set",
+            value: header.value,
+          })),
+        },
+        condition,
+      });
+    }
+
+    // Add new rules
     if (newRules.length > 0) {
       await chrome.declarativeNetRequest.updateDynamicRules({
         addRules: newRules,
       });
-      console.log("✅ 헤더 규칙이 업데이트되었습니다:", newRules);
-      console.log("📊 규칙 수:", newRules.length);
-      console.log("📝 요청 헤더 수:", requestHeaders.length);
-      console.log("📝 응답 헤더 수:", responseHeaders.length);
+      console.log("✅ Header rules updated:", newRules);
+      console.log("📊 Rule count:", newRules.length);
+      console.log("📝 Request header count:", requestHeaders.length);
+      console.log("📝 Response header count:", responseHeaders.length);
     } else {
-      console.log("⚠️ 적용할 헤더 규칙이 없습니다.");
+      console.log("⚠️ No header rules to apply.");
     }
 
-    // 적용 상태를 저장 (UI에서 확인용)
+    // Save applied state (for the UI)
     await chrome.storage.local.set({
       lastUpdate: new Date().toISOString(),
       appliedRulesCount: newRules.length,
     });
   } catch (error) {
-    console.error("❌ 규칙 업데이트 중 오류 발생:", error);
+    console.error("❌ Failed to update rules:", error);
     await chrome.storage.local.set({
       lastError: error.message,
       lastUpdate: new Date().toISOString(),

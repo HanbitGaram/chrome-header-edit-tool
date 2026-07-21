@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Antraščių redaktorius"
+  },
+  "extDescription": {
+    "message": "Plėtinys HTTP užklausų ir atsakymų antraštėms pridėti arba pašalinti"
+  },
+  "appTitle": {
+    "message": "Paprastas antraščių redaktorius"
+  },
+  "tabRequest": {
+    "message": "Užklausos antraštės"
+  },
+  "tabResponse": {
+    "message": "Atsakymo antraštės"
+  },
+  "addRequestHeader": {
+    "message": "Pridėti užklausos antraštę"
+  },
+  "addResponseHeader": {
+    "message": "Pridėti atsakymo antraštę"
+  },
+  "headerNamePlaceholder": {
+    "message": "Antraštės pavadinimas (pvz., User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Antraštės reikšmė"
+  },
+  "btnAdd": {
+    "message": "Pridėti"
+  },
+  "savedRequestHeaders": {
+    "message": "Išsaugotos užklausų antraštės"
+  },
+  "savedResponseHeaders": {
+    "message": "Išsaugotos atsakymų antraštės"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Svarbu:</strong> kai kurios antraštės tam tikrose situacijose gali būti nepritaikytos."
+  },
+  "btnChangeLanguage": {
+    "message": "Keisti kalbą"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Antraštės pavadinimas (pvz., access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automatiškai taikoma visiems skirtukams"
+  },
+  "alertEmptyFields": {
+    "message": "Įveskite antraštės pavadinimą ir reikšmę."
+  },
+  "alertDuplicate": {
+    "message": "Ši antraštė jau egzistuoja."
+  },
+  "emptyState": {
+    "message": "Nėra išsaugotų antraščių."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Kai kurios antraštės gali būti nepritaikytos."
+  },
+  "btnDelete": {
+    "message": "Ištrinti"
+  },
+  "siteOnlyLabel": {
+    "message": "Taikyti tik šiai svetainei"
+  },
+  "sourceCode": {
+    "message": "Šaltinio kodas"
+  }
+}

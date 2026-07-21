@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Editor hlaviček"
+  },
+  "extDescription": {
+    "message": "Rozšíření pro přidávání a odebírání hlaviček HTTP požadavků a odpovědí"
+  },
+  "appTitle": {
+    "message": "Jednoduchý editor hlaviček"
+  },
+  "tabRequest": {
+    "message": "Hlavičky požadavku"
+  },
+  "tabResponse": {
+    "message": "Hlavičky odpovědi"
+  },
+  "addRequestHeader": {
+    "message": "Přidat hlavičku požadavku"
+  },
+  "addResponseHeader": {
+    "message": "Přidat hlavičku odpovědi"
+  },
+  "headerNamePlaceholder": {
+    "message": "Název hlavičky (např. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Hodnota hlavičky"
+  },
+  "btnAdd": {
+    "message": "Přidat"
+  },
+  "savedRequestHeaders": {
+    "message": "Uložené hlavičky požadavků"
+  },
+  "savedResponseHeaders": {
+    "message": "Uložené hlavičky odpovědí"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Důležité:</strong> některé hlavičky nemusí být v určitých situacích použity."
+  },
+  "btnChangeLanguage": {
+    "message": "Změnit jazyk"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Název hlavičky (např. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automaticky se použije na všechny karty"
+  },
+  "alertEmptyFields": {
+    "message": "Zadejte název i hodnotu hlavičky."
+  },
+  "alertDuplicate": {
+    "message": "Tato hlavička již existuje."
+  },
+  "emptyState": {
+    "message": "Žádné uložené hlavičky."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Některé hlavičky nemusí být použity."
+  },
+  "btnDelete": {
+    "message": "Smazat"
+  },
+  "siteOnlyLabel": {
+    "message": "Použít pouze pro tento web"
+  },
+  "sourceCode": {
+    "message": "Zdrojový kód"
+  }
+}

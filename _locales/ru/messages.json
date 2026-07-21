@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Удалить"
+  },
+  "siteOnlyLabel": {
+    "message": "Применять только к этому сайту"
+  },
+  "sourceCode": {
+    "message": "Исходный код"
   }
 }

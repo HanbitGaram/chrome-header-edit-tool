@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Editor de capçaleres"
+  },
+  "extDescription": {
+    "message": "Extensió per afegir o eliminar capçaleres HTTP de sol·licitud i resposta"
+  },
+  "appTitle": {
+    "message": "Editor de capçaleres senzill"
+  },
+  "tabRequest": {
+    "message": "Capçaleres de sol·licitud"
+  },
+  "tabResponse": {
+    "message": "Capçaleres de resposta"
+  },
+  "addRequestHeader": {
+    "message": "Afegeix una capçalera de sol·licitud"
+  },
+  "addResponseHeader": {
+    "message": "Afegeix una capçalera de resposta"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nom de la capçalera (p. ex. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valor de la capçalera"
+  },
+  "btnAdd": {
+    "message": "Afegeix"
+  },
+  "savedRequestHeaders": {
+    "message": "Capçaleres de sol·licitud desades"
+  },
+  "savedResponseHeaders": {
+    "message": "Capçaleres de resposta desades"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Important:</strong> algunes capçaleres poden no aplicar-se en determinades situacions."
+  },
+  "btnChangeLanguage": {
+    "message": "Canvia l'idioma"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nom de la capçalera (p. ex. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 S'aplica automàticament a totes les pestanyes"
+  },
+  "alertEmptyFields": {
+    "message": "Introduïu el nom i el valor de la capçalera."
+  },
+  "alertDuplicate": {
+    "message": "Aquesta capçalera ja existeix."
+  },
+  "emptyState": {
+    "message": "No hi ha capçaleres desades."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Algunes capçaleres poden no aplicar-se."
+  },
+  "btnDelete": {
+    "message": "Suprimeix"
+  },
+  "siteOnlyLabel": {
+    "message": "Aplica només en aquest lloc"
+  },
+  "sourceCode": {
+    "message": "Codi font"
+  }
+}

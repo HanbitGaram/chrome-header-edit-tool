@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "தலைப்பு திருத்தி"
+  },
+  "extDescription": {
+    "message": "HTTP கோரிக்கை மற்றும் பதில் தலைப்புகளைச் சேர்க்க அல்லது நீக்க உதவும் நீட்டிப்பு"
+  },
+  "appTitle": {
+    "message": "எளிய தலைப்பு திருத்தி"
+  },
+  "tabRequest": {
+    "message": "கோரிக்கை தலைப்புகள்"
+  },
+  "tabResponse": {
+    "message": "பதில் தலைப்புகள்"
+  },
+  "addRequestHeader": {
+    "message": "கோரிக்கை தலைப்பைச் சேர்"
+  },
+  "addResponseHeader": {
+    "message": "பதில் தலைப்பைச் சேர்"
+  },
+  "headerNamePlaceholder": {
+    "message": "தலைப்பின் பெயர் (எ.கா. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "தலைப்பின் மதிப்பு"
+  },
+  "btnAdd": {
+    "message": "சேர்"
+  },
+  "savedRequestHeaders": {
+    "message": "சேமிக்கப்பட்ட கோரிக்கை தலைப்புகள்"
+  },
+  "savedResponseHeaders": {
+    "message": "சேமிக்கப்பட்ட பதில் தலைப்புகள்"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>முக்கியம்:</strong> சில தலைப்புகள் சில சூழ்நிலைகளில் பயன்படுத்தப்படாமல் போகலாம்."
+  },
+  "btnChangeLanguage": {
+    "message": "மொழியை மாற்று"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "தலைப்பின் பெயர் (எ.கா. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 எல்லா தாவல்களிலும் தானாகப் பயன்படுத்தப்படும்"
+  },
+  "alertEmptyFields": {
+    "message": "தலைப்பின் பெயரையும் மதிப்பையும் உள்ளிடவும்."
+  },
+  "alertDuplicate": {
+    "message": "இந்தத் தலைப்பு ஏற்கனவே உள்ளது."
+  },
+  "emptyState": {
+    "message": "சேமிக்கப்பட்ட தலைப்புகள் இல்லை."
+  },
+  "warningNotApplied": {
+    "message": "🚨 சில தலைப்புகள் பயன்படுத்தப்படாமல் போகலாம்."
+  },
+  "btnDelete": {
+    "message": "நீக்கு"
+  },
+  "siteOnlyLabel": {
+    "message": "இந்த தளத்தில் மட்டும் பயன்படுத்து"
+  },
+  "sourceCode": {
+    "message": "மூலக் குறியீடு"
+  }
+}

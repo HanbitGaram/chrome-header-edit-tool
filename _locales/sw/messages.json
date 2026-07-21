@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Kihariri cha Vichwa"
+  },
+  "extDescription": {
+    "message": "Kiendelezi cha kuongeza au kuondoa vichwa vya maombi na majibu ya HTTP"
+  },
+  "appTitle": {
+    "message": "Kihariri Rahisi cha Vichwa"
+  },
+  "tabRequest": {
+    "message": "Vichwa vya Ombi"
+  },
+  "tabResponse": {
+    "message": "Vichwa vya Jibu"
+  },
+  "addRequestHeader": {
+    "message": "Ongeza kichwa cha ombi"
+  },
+  "addResponseHeader": {
+    "message": "Ongeza kichwa cha jibu"
+  },
+  "headerNamePlaceholder": {
+    "message": "Jina la kichwa (k.m. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Thamani ya kichwa"
+  },
+  "btnAdd": {
+    "message": "Ongeza"
+  },
+  "savedRequestHeaders": {
+    "message": "Vichwa vya maombi vilivyohifadhiwa"
+  },
+  "savedResponseHeaders": {
+    "message": "Vichwa vya majibu vilivyohifadhiwa"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Muhimu:</strong> baadhi ya vichwa huenda visitumike katika hali fulani."
+  },
+  "btnChangeLanguage": {
+    "message": "Badilisha lugha"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Jina la kichwa (k.m. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Hutumika kiotomatiki kwenye vichupo vyote"
+  },
+  "alertEmptyFields": {
+    "message": "Weka jina na thamani ya kichwa."
+  },
+  "alertDuplicate": {
+    "message": "Kichwa hiki tayari kipo."
+  },
+  "emptyState": {
+    "message": "Hakuna vichwa vilivyohifadhiwa."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Baadhi ya vichwa huenda visitumike."
+  },
+  "btnDelete": {
+    "message": "Futa"
+  },
+  "siteOnlyLabel": {
+    "message": "Tumia kwenye tovuti hii pekee"
+  },
+  "sourceCode": {
+    "message": "Msimbo wa chanzo"
+  }
+}

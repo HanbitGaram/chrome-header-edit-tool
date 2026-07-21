@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Уређивач заглавља"
+  },
+  "extDescription": {
+    "message": "Проширење за додавање или уклањање HTTP заглавља захтева и одговора"
+  },
+  "appTitle": {
+    "message": "Једноставан уређивач заглавља"
+  },
+  "tabRequest": {
+    "message": "Заглавља захтева"
+  },
+  "tabResponse": {
+    "message": "Заглавља одговора"
+  },
+  "addRequestHeader": {
+    "message": "Додај заглавље захтева"
+  },
+  "addResponseHeader": {
+    "message": "Додај заглавље одговора"
+  },
+  "headerNamePlaceholder": {
+    "message": "Назив заглавља (нпр. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Вредност заглавља"
+  },
+  "btnAdd": {
+    "message": "Додај"
+  },
+  "savedRequestHeaders": {
+    "message": "Сачувана заглавља захтева"
+  },
+  "savedResponseHeaders": {
+    "message": "Сачувана заглавља одговора"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Важно:</strong> нека заглавља се у одређеним ситуацијама можда неће применити."
+  },
+  "btnChangeLanguage": {
+    "message": "Промени језик"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Назив заглавља (нпр. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Аутоматски се примењује на све картице"
+  },
+  "alertEmptyFields": {
+    "message": "Унесите назив и вредност заглавља."
+  },
+  "alertDuplicate": {
+    "message": "Ово заглавље већ постоји."
+  },
+  "emptyState": {
+    "message": "Нема сачуваних заглавља."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Нека заглавља се можда неће применити."
+  },
+  "btnDelete": {
+    "message": "Избриши"
+  },
+  "siteOnlyLabel": {
+    "message": "Примени само на овај сајт"
+  },
+  "sourceCode": {
+    "message": "Изворни код"
+  }
+}

@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Tanggalin"
+  },
+  "siteOnlyLabel": {
+    "message": "Ilapat lamang sa site na ito"
+  },
+  "sourceCode": {
+    "message": "Source code"
   }
 }

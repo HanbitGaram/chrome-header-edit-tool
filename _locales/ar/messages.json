@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "حذف"
+  },
+  "siteOnlyLabel": {
+    "message": "التطبيق على هذا الموقع فقط"
+  },
+  "sourceCode": {
+    "message": "الكود المصدري"
   }
 }

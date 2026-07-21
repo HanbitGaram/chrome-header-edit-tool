@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Header-redigerare"
+  },
+  "extDescription": {
+    "message": "Tillägg för att lägga till eller ta bort HTTP-begäran- och svarsheaders"
+  },
+  "appTitle": {
+    "message": "Enkel header-redigerare"
+  },
+  "tabRequest": {
+    "message": "Begäranheaders"
+  },
+  "tabResponse": {
+    "message": "Svarsheaders"
+  },
+  "addRequestHeader": {
+    "message": "Lägg till begäranheader"
+  },
+  "addResponseHeader": {
+    "message": "Lägg till svarsheader"
+  },
+  "headerNamePlaceholder": {
+    "message": "Headernamn (t.ex. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Headervärde"
+  },
+  "btnAdd": {
+    "message": "Lägg till"
+  },
+  "savedRequestHeaders": {
+    "message": "Sparade begäranheaders"
+  },
+  "savedResponseHeaders": {
+    "message": "Sparade svarsheaders"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Viktigt:</strong> vissa headers kanske inte tillämpas i vissa situationer."
+  },
+  "btnChangeLanguage": {
+    "message": "Byt språk"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Headernamn (t.ex. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Tillämpas automatiskt på alla flikar"
+  },
+  "alertEmptyFields": {
+    "message": "Ange både headerns namn och värde."
+  },
+  "alertDuplicate": {
+    "message": "Denna header finns redan."
+  },
+  "emptyState": {
+    "message": "Inga sparade headers."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Vissa headers kanske inte tillämpas."
+  },
+  "btnDelete": {
+    "message": "Ta bort"
+  },
+  "siteOnlyLabel": {
+    "message": "Tillämpa endast på denna webbplats"
+  },
+  "sourceCode": {
+    "message": "Källkod"
+  }
+}

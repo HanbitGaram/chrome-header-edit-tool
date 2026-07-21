@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "ตัวแก้ไขส่วนหัว"
+  },
+  "extDescription": {
+    "message": "ส่วนขยายสำหรับเพิ่มหรือลบส่วนหัวคำขอและการตอบกลับ HTTP"
+  },
+  "appTitle": {
+    "message": "ตัวแก้ไขส่วนหัวอย่างง่าย"
+  },
+  "tabRequest": {
+    "message": "ส่วนหัวคำขอ"
+  },
+  "tabResponse": {
+    "message": "ส่วนหัวการตอบกลับ"
+  },
+  "addRequestHeader": {
+    "message": "เพิ่มส่วนหัวคำขอ"
+  },
+  "addResponseHeader": {
+    "message": "เพิ่มส่วนหัวการตอบกลับ"
+  },
+  "headerNamePlaceholder": {
+    "message": "ชื่อส่วนหัว (เช่น User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "ค่าส่วนหัว"
+  },
+  "btnAdd": {
+    "message": "เพิ่ม"
+  },
+  "savedRequestHeaders": {
+    "message": "ส่วนหัวคำขอที่บันทึกไว้"
+  },
+  "savedResponseHeaders": {
+    "message": "ส่วนหัวการตอบกลับที่บันทึกไว้"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>สำคัญ:</strong> ส่วนหัวบางรายการอาจไม่ถูกนำไปใช้ในบางสถานการณ์"
+  },
+  "btnChangeLanguage": {
+    "message": "เปลี่ยนภาษา"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "ชื่อส่วนหัว (เช่น access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 นำไปใช้กับทุกแท็บโดยอัตโนมัติ"
+  },
+  "alertEmptyFields": {
+    "message": "กรุณากรอกทั้งชื่อและค่าของส่วนหัว"
+  },
+  "alertDuplicate": {
+    "message": "มีส่วนหัวนี้อยู่แล้ว"
+  },
+  "emptyState": {
+    "message": "ไม่มีส่วนหัวที่บันทึกไว้"
+  },
+  "warningNotApplied": {
+    "message": "🚨 ส่วนหัวบางรายการอาจไม่ถูกนำไปใช้"
+  },
+  "btnDelete": {
+    "message": "ลบ"
+  },
+  "siteOnlyLabel": {
+    "message": "ใช้กับเว็บไซต์นี้เท่านั้น"
+  },
+  "sourceCode": {
+    "message": "ซอร์สโค้ด"
+  }
+}

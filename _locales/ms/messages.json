@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Penyunting Pengepala"
+  },
+  "extDescription": {
+    "message": "Sambungan untuk menambah atau membuang pengepala permintaan dan respons HTTP"
+  },
+  "appTitle": {
+    "message": "Penyunting Pengepala Ringkas"
+  },
+  "tabRequest": {
+    "message": "Pengepala Permintaan"
+  },
+  "tabResponse": {
+    "message": "Pengepala Respons"
+  },
+  "addRequestHeader": {
+    "message": "Tambah pengepala permintaan"
+  },
+  "addResponseHeader": {
+    "message": "Tambah pengepala respons"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nama pengepala (cth. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Nilai pengepala"
+  },
+  "btnAdd": {
+    "message": "Tambah"
+  },
+  "savedRequestHeaders": {
+    "message": "Pengepala permintaan tersimpan"
+  },
+  "savedResponseHeaders": {
+    "message": "Pengepala respons tersimpan"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Penting:</strong> sesetengah pengepala mungkin tidak digunakan dalam situasi tertentu."
+  },
+  "btnChangeLanguage": {
+    "message": "Tukar bahasa"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nama pengepala (cth. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Digunakan secara automatik pada semua tab"
+  },
+  "alertEmptyFields": {
+    "message": "Masukkan nama dan nilai pengepala."
+  },
+  "alertDuplicate": {
+    "message": "Pengepala ini sudah wujud."
+  },
+  "emptyState": {
+    "message": "Tiada pengepala tersimpan."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Sesetengah pengepala mungkin tidak digunakan."
+  },
+  "btnDelete": {
+    "message": "Padam"
+  },
+  "siteOnlyLabel": {
+    "message": "Guna pada tapak ini sahaja"
+  },
+  "sourceCode": {
+    "message": "Kod sumber"
+  }
+}

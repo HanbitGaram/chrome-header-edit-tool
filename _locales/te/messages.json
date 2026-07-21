@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "హెడర్ ఎడిటర్"
+  },
+  "extDescription": {
+    "message": "HTTP అభ్యర్థన మరియు ప్రతిస్పందన హెడర్‌లను జోడించడానికి లేదా తీసివేయడానికి పొడిగింపు"
+  },
+  "appTitle": {
+    "message": "సరళమైన హెడర్ ఎడిటర్"
+  },
+  "tabRequest": {
+    "message": "అభ్యర్థన హెడర్‌లు"
+  },
+  "tabResponse": {
+    "message": "ప్రతిస్పందన హెడర్‌లు"
+  },
+  "addRequestHeader": {
+    "message": "అభ్యర్థన హెడర్‌ను జోడించండి"
+  },
+  "addResponseHeader": {
+    "message": "ప్రతిస్పందన హెడర్‌ను జోడించండి"
+  },
+  "headerNamePlaceholder": {
+    "message": "హెడర్ పేరు (ఉదా. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "హెడర్ విలువ"
+  },
+  "btnAdd": {
+    "message": "జోడించు"
+  },
+  "savedRequestHeaders": {
+    "message": "సేవ్ చేసిన అభ్యర్థన హెడర్‌లు"
+  },
+  "savedResponseHeaders": {
+    "message": "సేవ్ చేసిన ప్రతిస్పందన హెడర్‌లు"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>ముఖ్యం:</strong> కొన్ని హెడర్‌లు కొన్ని సందర్భాల్లో వర్తించకపోవచ్చు."
+  },
+  "btnChangeLanguage": {
+    "message": "భాషను మార్చండి"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "హెడర్ పేరు (ఉదా. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 అన్ని ట్యాబ్‌లలో స్వయంచాలకంగా వర్తిస్తుంది"
+  },
+  "alertEmptyFields": {
+    "message": "హెడర్ పేరు మరియు విలువ రెండింటినీ నమోదు చేయండి."
+  },
+  "alertDuplicate": {
+    "message": "ఈ హెడర్ ఇప్పటికే ఉంది."
+  },
+  "emptyState": {
+    "message": "సేవ్ చేసిన హెడర్‌లు లేవు."
+  },
+  "warningNotApplied": {
+    "message": "🚨 కొన్ని హెడర్‌లు వర్తించకపోవచ్చు."
+  },
+  "btnDelete": {
+    "message": "తొలగించు"
+  },
+  "siteOnlyLabel": {
+    "message": "ఈ సైట్‌కు మాత్రమే వర్తింపజేయి"
+  },
+  "sourceCode": {
+    "message": "సోర్స్ కోడ్"
+  }
+}

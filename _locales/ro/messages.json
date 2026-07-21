@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Șterge"
+  },
+  "siteOnlyLabel": {
+    "message": "Aplică doar pentru acest site"
+  },
+  "sourceCode": {
+    "message": "Cod sursă"
   }
 }

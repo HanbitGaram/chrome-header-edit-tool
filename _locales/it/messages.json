@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Editor di intestazioni"
+  },
+  "extDescription": {
+    "message": "Estensione per aggiungere o rimuovere intestazioni HTTP di richiesta e risposta"
+  },
+  "appTitle": {
+    "message": "Editor di intestazioni semplice"
+  },
+  "tabRequest": {
+    "message": "Intestazioni richiesta"
+  },
+  "tabResponse": {
+    "message": "Intestazioni risposta"
+  },
+  "addRequestHeader": {
+    "message": "Aggiungi intestazione di richiesta"
+  },
+  "addResponseHeader": {
+    "message": "Aggiungi intestazione di risposta"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nome intestazione (es. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valore intestazione"
+  },
+  "btnAdd": {
+    "message": "Aggiungi"
+  },
+  "savedRequestHeaders": {
+    "message": "Intestazioni di richiesta salvate"
+  },
+  "savedResponseHeaders": {
+    "message": "Intestazioni di risposta salvate"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Importante:</strong> alcune intestazioni potrebbero non essere applicate in determinate situazioni."
+  },
+  "btnChangeLanguage": {
+    "message": "Cambia lingua"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nome intestazione (es. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Applicato automaticamente a tutte le schede"
+  },
+  "alertEmptyFields": {
+    "message": "Inserisci sia il nome che il valore dell'intestazione."
+  },
+  "alertDuplicate": {
+    "message": "Questa intestazione esiste già."
+  },
+  "emptyState": {
+    "message": "Nessuna intestazione salvata."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Alcune intestazioni potrebbero non essere applicate."
+  },
+  "btnDelete": {
+    "message": "Elimina"
+  },
+  "siteOnlyLabel": {
+    "message": "Applica solo a questo sito"
+  },
+  "sourceCode": {
+    "message": "Codice sorgente"
+  }
+}

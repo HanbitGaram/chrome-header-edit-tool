@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "হেডার সম্পাদক"
+  },
+  "extDescription": {
+    "message": "HTTP অনুরোধ ও প্রতিক্রিয়া হেডার যোগ বা মুছে ফেলার এক্সটেনশন"
+  },
+  "appTitle": {
+    "message": "সহজ হেডার সম্পাদক"
+  },
+  "tabRequest": {
+    "message": "অনুরোধ হেডার"
+  },
+  "tabResponse": {
+    "message": "প্রতিক্রিয়া হেডার"
+  },
+  "addRequestHeader": {
+    "message": "অনুরোধ হেডার যোগ করুন"
+  },
+  "addResponseHeader": {
+    "message": "প্রতিক্রিয়া হেডার যোগ করুন"
+  },
+  "headerNamePlaceholder": {
+    "message": "হেডারের নাম (যেমন User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "হেডারের মান"
+  },
+  "btnAdd": {
+    "message": "যোগ করুন"
+  },
+  "savedRequestHeaders": {
+    "message": "সংরক্ষিত অনুরোধ হেডার"
+  },
+  "savedResponseHeaders": {
+    "message": "সংরক্ষিত প্রতিক্রিয়া হেডার"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>গুরুত্বপূর্ণ:</strong> কিছু হেডার নির্দিষ্ট পরিস্থিতিতে প্রয়োগ নাও হতে পারে।"
+  },
+  "btnChangeLanguage": {
+    "message": "ভাষা পরিবর্তন"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "হেডারের নাম (যেমন access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 সব ট্যাবে স্বয়ংক্রিয়ভাবে প্রযোজ্য"
+  },
+  "alertEmptyFields": {
+    "message": "হেডারের নাম ও মান উভয়ই লিখুন।"
+  },
+  "alertDuplicate": {
+    "message": "এই হেডার ইতিমধ্যে বিদ্যমান।"
+  },
+  "emptyState": {
+    "message": "কোনো সংরক্ষিত হেডার নেই।"
+  },
+  "warningNotApplied": {
+    "message": "🚨 কিছু হেডার প্রয়োগ নাও হতে পারে।"
+  },
+  "btnDelete": {
+    "message": "মুছুন"
+  },
+  "siteOnlyLabel": {
+    "message": "শুধুমাত্র এই সাইটে প্রয়োগ করুন"
+  },
+  "sourceCode": {
+    "message": "সোর্স কোড"
+  }
+}

@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Slett"
+  },
+  "siteOnlyLabel": {
+    "message": "Bruk kun på dette nettstedet"
+  },
+  "sourceCode": {
+    "message": "Kildekode"
   }
 }

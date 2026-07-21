@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Редактор на заглавки"
+  },
+  "extDescription": {
+    "message": "Разширение за добавяне или премахване на HTTP заглавки на заявки и отговори"
+  },
+  "appTitle": {
+    "message": "Прост редактор на заглавки"
+  },
+  "tabRequest": {
+    "message": "Заглавки на заявката"
+  },
+  "tabResponse": {
+    "message": "Заглавки на отговора"
+  },
+  "addRequestHeader": {
+    "message": "Добавяне на заглавка на заявка"
+  },
+  "addResponseHeader": {
+    "message": "Добавяне на заглавка на отговор"
+  },
+  "headerNamePlaceholder": {
+    "message": "Име на заглавката (напр. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Стойност на заглавката"
+  },
+  "btnAdd": {
+    "message": "Добави"
+  },
+  "savedRequestHeaders": {
+    "message": "Запазени заглавки на заявки"
+  },
+  "savedResponseHeaders": {
+    "message": "Запазени заглавки на отговори"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Важно:</strong> някои заглавки може да не се приложат в определени ситуации."
+  },
+  "btnChangeLanguage": {
+    "message": "Смяна на езика"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Име на заглавката (напр. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Прилага се автоматично във всички раздели"
+  },
+  "alertEmptyFields": {
+    "message": "Въведете и името, и стойността на заглавката."
+  },
+  "alertDuplicate": {
+    "message": "Тази заглавка вече съществува."
+  },
+  "emptyState": {
+    "message": "Няма запазени заглавки."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Някои заглавки може да не се приложат."
+  },
+  "btnDelete": {
+    "message": "Изтрий"
+  },
+  "siteOnlyLabel": {
+    "message": "Прилагай само за този сайт"
+  },
+  "sourceCode": {
+    "message": "Изходен код"
+  }
+}

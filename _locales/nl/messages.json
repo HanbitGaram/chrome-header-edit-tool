@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Header-editor"
+  },
+  "extDescription": {
+    "message": "Extensie om HTTP-verzoek- en antwoordheaders toe te voegen of te verwijderen"
+  },
+  "appTitle": {
+    "message": "Eenvoudige header-editor"
+  },
+  "tabRequest": {
+    "message": "Verzoekheaders"
+  },
+  "tabResponse": {
+    "message": "Antwoordheaders"
+  },
+  "addRequestHeader": {
+    "message": "Verzoekheader toevoegen"
+  },
+  "addResponseHeader": {
+    "message": "Antwoordheader toevoegen"
+  },
+  "headerNamePlaceholder": {
+    "message": "Headernaam (bijv. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Headerwaarde"
+  },
+  "btnAdd": {
+    "message": "Toevoegen"
+  },
+  "savedRequestHeaders": {
+    "message": "Opgeslagen verzoekheaders"
+  },
+  "savedResponseHeaders": {
+    "message": "Opgeslagen antwoordheaders"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Belangrijk:</strong> sommige headers worden in bepaalde situaties mogelijk niet toegepast."
+  },
+  "btnChangeLanguage": {
+    "message": "Taal wijzigen"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Headernaam (bijv. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automatisch toegepast op alle tabbladen"
+  },
+  "alertEmptyFields": {
+    "message": "Vul zowel de naam als de waarde van de header in."
+  },
+  "alertDuplicate": {
+    "message": "Deze header bestaat al."
+  },
+  "emptyState": {
+    "message": "Geen opgeslagen headers."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Sommige headers worden mogelijk niet toegepast."
+  },
+  "btnDelete": {
+    "message": "Verwijderen"
+  },
+  "siteOnlyLabel": {
+    "message": "Alleen op deze site toepassen"
+  },
+  "sourceCode": {
+    "message": "Broncode"
+  }
+}

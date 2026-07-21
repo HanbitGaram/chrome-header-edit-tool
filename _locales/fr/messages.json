@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Supprimer"
+  },
+  "siteOnlyLabel": {
+    "message": "Appliquer uniquement à ce site"
+  },
+  "sourceCode": {
+    "message": "Code source"
   }
 }

@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "ویرایشگر هدر"
+  },
+  "extDescription": {
+    "message": "افزونه‌ای برای افزودن یا حذف هدرهای درخواست و پاسخ HTTP"
+  },
+  "appTitle": {
+    "message": "ویرایشگر ساده هدر"
+  },
+  "tabRequest": {
+    "message": "هدرهای درخواست"
+  },
+  "tabResponse": {
+    "message": "هدرهای پاسخ"
+  },
+  "addRequestHeader": {
+    "message": "افزودن هدر درخواست"
+  },
+  "addResponseHeader": {
+    "message": "افزودن هدر پاسخ"
+  },
+  "headerNamePlaceholder": {
+    "message": "نام هدر (مثلاً User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "مقدار هدر"
+  },
+  "btnAdd": {
+    "message": "افزودن"
+  },
+  "savedRequestHeaders": {
+    "message": "هدرهای درخواست ذخیره‌شده"
+  },
+  "savedResponseHeaders": {
+    "message": "هدرهای پاسخ ذخیره‌شده"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>مهم:</strong> برخی هدرها ممکن است در شرایط خاص اعمال نشوند."
+  },
+  "btnChangeLanguage": {
+    "message": "تغییر زبان"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "نام هدر (مثلاً access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 به‌طور خودکار در همه برگه‌ها اعمال می‌شود"
+  },
+  "alertEmptyFields": {
+    "message": "نام و مقدار هدر را وارد کنید."
+  },
+  "alertDuplicate": {
+    "message": "این هدر از قبل وجود دارد."
+  },
+  "emptyState": {
+    "message": "هیچ هدر ذخیره‌شده‌ای وجود ندارد."
+  },
+  "warningNotApplied": {
+    "message": "🚨 برخی هدرها ممکن است اعمال نشوند."
+  },
+  "btnDelete": {
+    "message": "حذف"
+  },
+  "siteOnlyLabel": {
+    "message": "فقط برای این سایت اعمال شود"
+  },
+  "sourceCode": {
+    "message": "کد منبع"
+  }
+}

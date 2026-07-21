@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Editor Header"
+  },
+  "extDescription": {
+    "message": "Ekstensi untuk menambah atau menghapus header permintaan dan respons HTTP"
+  },
+  "appTitle": {
+    "message": "Editor Header Sederhana"
+  },
+  "tabRequest": {
+    "message": "Header Permintaan"
+  },
+  "tabResponse": {
+    "message": "Header Respons"
+  },
+  "addRequestHeader": {
+    "message": "Tambah header permintaan"
+  },
+  "addResponseHeader": {
+    "message": "Tambah header respons"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nama header (mis. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Nilai header"
+  },
+  "btnAdd": {
+    "message": "Tambah"
+  },
+  "savedRequestHeaders": {
+    "message": "Header permintaan tersimpan"
+  },
+  "savedResponseHeaders": {
+    "message": "Header respons tersimpan"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Penting:</strong> beberapa header mungkin tidak diterapkan dalam situasi tertentu."
+  },
+  "btnChangeLanguage": {
+    "message": "Ubah bahasa"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nama header (mis. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Diterapkan secara otomatis di semua tab"
+  },
+  "alertEmptyFields": {
+    "message": "Masukkan nama dan nilai header."
+  },
+  "alertDuplicate": {
+    "message": "Header ini sudah ada."
+  },
+  "emptyState": {
+    "message": "Tidak ada header tersimpan."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Beberapa header mungkin tidak diterapkan."
+  },
+  "btnDelete": {
+    "message": "Hapus"
+  },
+  "siteOnlyLabel": {
+    "message": "Terapkan hanya di situs ini"
+  },
+  "sourceCode": {
+    "message": "Kode sumber"
+  }
+}

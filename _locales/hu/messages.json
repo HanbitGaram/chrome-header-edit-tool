@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Fejlécszerkesztő"
+  },
+  "extDescription": {
+    "message": "Bővítmény HTTP-kérés- és válaszfejlécek hozzáadásához vagy eltávolításához"
+  },
+  "appTitle": {
+    "message": "Egyszerű fejlécszerkesztő"
+  },
+  "tabRequest": {
+    "message": "Kérésfejlécek"
+  },
+  "tabResponse": {
+    "message": "Válaszfejlécek"
+  },
+  "addRequestHeader": {
+    "message": "Kérésfejléc hozzáadása"
+  },
+  "addResponseHeader": {
+    "message": "Válaszfejléc hozzáadása"
+  },
+  "headerNamePlaceholder": {
+    "message": "Fejléc neve (pl. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Fejléc értéke"
+  },
+  "btnAdd": {
+    "message": "Hozzáadás"
+  },
+  "savedRequestHeaders": {
+    "message": "Mentett kérésfejlécek"
+  },
+  "savedResponseHeaders": {
+    "message": "Mentett válaszfejlécek"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Fontos:</strong> bizonyos helyzetekben egyes fejlécek nem kerülnek alkalmazásra."
+  },
+  "btnChangeLanguage": {
+    "message": "Nyelv módosítása"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Fejléc neve (pl. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automatikusan érvényes minden lapon"
+  },
+  "alertEmptyFields": {
+    "message": "Adja meg a fejléc nevét és értékét is."
+  },
+  "alertDuplicate": {
+    "message": "Ez a fejléc már létezik."
+  },
+  "emptyState": {
+    "message": "Nincsenek mentett fejlécek."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Egyes fejlécek nem biztos, hogy alkalmazásra kerülnek."
+  },
+  "btnDelete": {
+    "message": "Törlés"
+  },
+  "siteOnlyLabel": {
+    "message": "Csak erre a webhelyre"
+  },
+  "sourceCode": {
+    "message": "Forráskód"
+  }
+}

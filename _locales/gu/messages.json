@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "હેડર એડિટર"
+  },
+  "extDescription": {
+    "message": "HTTP વિનંતી અને પ્રતિસાદ હેડર ઉમેરવા અથવા દૂર કરવા માટેનું એક્સ્ટેન્શન"
+  },
+  "appTitle": {
+    "message": "સરળ હેડર એડિટર"
+  },
+  "tabRequest": {
+    "message": "વિનંતી હેડર"
+  },
+  "tabResponse": {
+    "message": "પ્રતિસાદ હેડર"
+  },
+  "addRequestHeader": {
+    "message": "વિનંતી હેડર ઉમેરો"
+  },
+  "addResponseHeader": {
+    "message": "પ્રતિસાદ હેડર ઉમેરો"
+  },
+  "headerNamePlaceholder": {
+    "message": "હેડરનું નામ (દા.ત. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "હેડરનું મૂલ્ય"
+  },
+  "btnAdd": {
+    "message": "ઉમેરો"
+  },
+  "savedRequestHeaders": {
+    "message": "સાચવેલા વિનંતી હેડર"
+  },
+  "savedResponseHeaders": {
+    "message": "સાચવેલા પ્રતિસાદ હેડર"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>મહત્વપૂર્ણ:</strong> કેટલાક હેડર અમુક પરિસ્થિતિઓમાં લાગુ ન પણ થાય."
+  },
+  "btnChangeLanguage": {
+    "message": "ભાષા બદલો"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "હેડરનું નામ (દા.ત. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 બધા ટૅબ પર આપમેળે લાગુ થાય છે"
+  },
+  "alertEmptyFields": {
+    "message": "હેડરનું નામ અને મૂલ્ય બંને દાખલ કરો."
+  },
+  "alertDuplicate": {
+    "message": "આ હેડર પહેલેથી અસ્તિત્વમાં છે."
+  },
+  "emptyState": {
+    "message": "કોઈ સાચવેલા હેડર નથી."
+  },
+  "warningNotApplied": {
+    "message": "🚨 કેટલાક હેડર લાગુ ન પણ થાય."
+  },
+  "btnDelete": {
+    "message": "કાઢી નાખો"
+  },
+  "siteOnlyLabel": {
+    "message": "ફક્ત આ સાઇટ પર લાગુ કરો"
+  },
+  "sourceCode": {
+    "message": "સોર્સ કોડ"
+  }
+}

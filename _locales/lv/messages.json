@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Galveņu redaktors"
+  },
+  "extDescription": {
+    "message": "Paplašinājums HTTP pieprasījumu un atbilžu galveņu pievienošanai vai noņemšanai"
+  },
+  "appTitle": {
+    "message": "Vienkāršs galveņu redaktors"
+  },
+  "tabRequest": {
+    "message": "Pieprasījuma galvenes"
+  },
+  "tabResponse": {
+    "message": "Atbildes galvenes"
+  },
+  "addRequestHeader": {
+    "message": "Pievienot pieprasījuma galveni"
+  },
+  "addResponseHeader": {
+    "message": "Pievienot atbildes galveni"
+  },
+  "headerNamePlaceholder": {
+    "message": "Galvenes nosaukums (piem., User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Galvenes vērtība"
+  },
+  "btnAdd": {
+    "message": "Pievienot"
+  },
+  "savedRequestHeaders": {
+    "message": "Saglabātās pieprasījumu galvenes"
+  },
+  "savedResponseHeaders": {
+    "message": "Saglabātās atbilžu galvenes"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Svarīgi:</strong> dažas galvenes noteiktās situācijās var netikt piemērotas."
+  },
+  "btnChangeLanguage": {
+    "message": "Mainīt valodu"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Galvenes nosaukums (piem., access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Automātiski tiek piemērots visām cilnēm"
+  },
+  "alertEmptyFields": {
+    "message": "Ievadiet gan galvenes nosaukumu, gan vērtību."
+  },
+  "alertDuplicate": {
+    "message": "Šāda galvene jau pastāv."
+  },
+  "emptyState": {
+    "message": "Nav saglabātu galveņu."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Dažas galvenes var netikt piemērotas."
+  },
+  "btnDelete": {
+    "message": "Dzēst"
+  },
+  "siteOnlyLabel": {
+    "message": "Piemērot tikai šai vietnei"
+  },
+  "sourceCode": {
+    "message": "Pirmkods"
+  }
+}

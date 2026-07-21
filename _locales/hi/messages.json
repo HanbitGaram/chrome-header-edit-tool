@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "हटाएं"
+  },
+  "siteOnlyLabel": {
+    "message": "केवल इस साइट पर लागू करें"
+  },
+  "sourceCode": {
+    "message": "सोर्स कोड"
   }
 }

@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Header-editor"
+  },
+  "extDescription": {
+    "message": "Udvidelse til at tilføje eller fjerne HTTP-anmodnings- og svarheadere"
+  },
+  "appTitle": {
+    "message": "Enkel header-editor"
+  },
+  "tabRequest": {
+    "message": "Anmodningsheadere"
+  },
+  "tabResponse": {
+    "message": "Svarheadere"
+  },
+  "addRequestHeader": {
+    "message": "Tilføj anmodningsheader"
+  },
+  "addResponseHeader": {
+    "message": "Tilføj svarheader"
+  },
+  "headerNamePlaceholder": {
+    "message": "Headernavn (f.eks. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Headerværdi"
+  },
+  "btnAdd": {
+    "message": "Tilføj"
+  },
+  "savedRequestHeaders": {
+    "message": "Gemte anmodningsheadere"
+  },
+  "savedResponseHeaders": {
+    "message": "Gemte svarheadere"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Vigtigt:</strong> nogle headere anvendes muligvis ikke i visse situationer."
+  },
+  "btnChangeLanguage": {
+    "message": "Skift sprog"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Headernavn (f.eks. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Anvendes automatisk på alle faner"
+  },
+  "alertEmptyFields": {
+    "message": "Indtast både headerens navn og værdi."
+  },
+  "alertDuplicate": {
+    "message": "Denne header findes allerede."
+  },
+  "emptyState": {
+    "message": "Ingen gemte headere."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Nogle headere anvendes muligvis ikke."
+  },
+  "btnDelete": {
+    "message": "Slet"
+  },
+  "siteOnlyLabel": {
+    "message": "Anvend kun på dette websted"
+  },
+  "sourceCode": {
+    "message": "Kildekode"
+  }
+}

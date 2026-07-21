@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Sil"
+  },
+  "siteOnlyLabel": {
+    "message": "Yalnızca bu siteye uygula"
+  },
+  "sourceCode": {
+    "message": "Kaynak kodu"
   }
 }

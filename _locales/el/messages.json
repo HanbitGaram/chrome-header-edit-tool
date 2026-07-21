@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Επεξεργαστής κεφαλίδων"
+  },
+  "extDescription": {
+    "message": "Επέκταση για προσθήκη ή αφαίρεση κεφαλίδων αιτημάτων και αποκρίσεων HTTP"
+  },
+  "appTitle": {
+    "message": "Απλός επεξεργαστής κεφαλίδων"
+  },
+  "tabRequest": {
+    "message": "Κεφαλίδες αιτήματος"
+  },
+  "tabResponse": {
+    "message": "Κεφαλίδες απόκρισης"
+  },
+  "addRequestHeader": {
+    "message": "Προσθήκη κεφαλίδας αιτήματος"
+  },
+  "addResponseHeader": {
+    "message": "Προσθήκη κεφαλίδας απόκρισης"
+  },
+  "headerNamePlaceholder": {
+    "message": "Όνομα κεφαλίδας (π.χ. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Τιμή κεφαλίδας"
+  },
+  "btnAdd": {
+    "message": "Προσθήκη"
+  },
+  "savedRequestHeaders": {
+    "message": "Αποθηκευμένες κεφαλίδες αιτήματος"
+  },
+  "savedResponseHeaders": {
+    "message": "Αποθηκευμένες κεφαλίδες απόκρισης"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Σημαντικό:</strong> ορισμένες κεφαλίδες ενδέχεται να μην εφαρμόζονται σε ορισμένες περιπτώσεις."
+  },
+  "btnChangeLanguage": {
+    "message": "Αλλαγή γλώσσας"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Όνομα κεφαλίδας (π.χ. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Εφαρμόζεται αυτόματα σε όλες τις καρτέλες"
+  },
+  "alertEmptyFields": {
+    "message": "Εισαγάγετε το όνομα και την τιμή της κεφαλίδας."
+  },
+  "alertDuplicate": {
+    "message": "Αυτή η κεφαλίδα υπάρχει ήδη."
+  },
+  "emptyState": {
+    "message": "Δεν υπάρχουν αποθηκευμένες κεφαλίδες."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Ορισμένες κεφαλίδες ενδέχεται να μην εφαρμοστούν."
+  },
+  "btnDelete": {
+    "message": "Διαγραφή"
+  },
+  "siteOnlyLabel": {
+    "message": "Εφαρμογή μόνο σε αυτόν τον ιστότοπο"
+  },
+  "sourceCode": {
+    "message": "Πηγαίος κώδικας"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "עורך כותרות"
+  },
+  "extDescription": {
+    "message": "תוסף להוספה או הסרה של כותרות בקשה ותגובה של HTTP"
+  },
+  "appTitle": {
+    "message": "עורך כותרות פשוט"
+  },
+  "tabRequest": {
+    "message": "כותרות בקשה"
+  },
+  "tabResponse": {
+    "message": "כותרות תגובה"
+  },
+  "addRequestHeader": {
+    "message": "הוספת כותרת בקשה"
+  },
+  "addResponseHeader": {
+    "message": "הוספת כותרת תגובה"
+  },
+  "headerNamePlaceholder": {
+    "message": "שם הכותרת (למשל User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "ערך הכותרת"
+  },
+  "btnAdd": {
+    "message": "הוספה"
+  },
+  "savedRequestHeaders": {
+    "message": "כותרות בקשה שמורות"
+  },
+  "savedResponseHeaders": {
+    "message": "כותרות תגובה שמורות"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>חשוב:</strong> ייתכן שכותרות מסוימות לא יחולו במצבים מסוימים."
+  },
+  "btnChangeLanguage": {
+    "message": "שינוי שפה"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "שם הכותרת (למשל access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 חל אוטומטית על כל הכרטיסיות"
+  },
+  "alertEmptyFields": {
+    "message": "יש להזין גם את שם הכותרת וגם את הערך."
+  },
+  "alertDuplicate": {
+    "message": "כותרת זו כבר קיימת."
+  },
+  "emptyState": {
+    "message": "אין כותרות שמורות."
+  },
+  "warningNotApplied": {
+    "message": "🚨 ייתכן שכותרות מסוימות לא יחולו."
+  },
+  "btnDelete": {
+    "message": "מחיקה"
+  },
+  "siteOnlyLabel": {
+    "message": "החל רק על אתר זה"
+  },
+  "sourceCode": {
+    "message": "קוד מקור"
+  }
+}

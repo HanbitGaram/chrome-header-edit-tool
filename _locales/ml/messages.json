@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "ഹെഡർ എഡിറ്റർ"
+  },
+  "extDescription": {
+    "message": "HTTP അഭ്യർത്ഥന, പ്രതികരണ ഹെഡറുകൾ ചേർക്കാനോ നീക്കം ചെയ്യാനോ ഉള്ള എക്സ്റ്റൻഷൻ"
+  },
+  "appTitle": {
+    "message": "ലളിതമായ ഹെഡർ എഡിറ്റർ"
+  },
+  "tabRequest": {
+    "message": "അഭ്യർത്ഥന ഹെഡറുകൾ"
+  },
+  "tabResponse": {
+    "message": "പ്രതികരണ ഹെഡറുകൾ"
+  },
+  "addRequestHeader": {
+    "message": "അഭ്യർത്ഥന ഹെഡർ ചേർക്കുക"
+  },
+  "addResponseHeader": {
+    "message": "പ്രതികരണ ഹെഡർ ചേർക്കുക"
+  },
+  "headerNamePlaceholder": {
+    "message": "ഹെഡറിന്റെ പേര് (ഉദാ. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "ഹെഡറിന്റെ മൂല്യം"
+  },
+  "btnAdd": {
+    "message": "ചേർക്കുക"
+  },
+  "savedRequestHeaders": {
+    "message": "സംരക്ഷിച്ച അഭ്യർത്ഥന ഹെഡറുകൾ"
+  },
+  "savedResponseHeaders": {
+    "message": "സംരക്ഷിച്ച പ്രതികരണ ഹെഡറുകൾ"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>പ്രധാനം:</strong> ചില ഹെഡറുകൾ ചില സാഹചര്യങ്ങളിൽ പ്രയോഗിക്കപ്പെടണമെന്നില്ല."
+  },
+  "btnChangeLanguage": {
+    "message": "ഭാഷ മാറ്റുക"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "ഹെഡറിന്റെ പേര് (ഉദാ. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 എല്ലാ ടാബുകളിലും സ്വയമേവ പ്രയോഗിക്കപ്പെടും"
+  },
+  "alertEmptyFields": {
+    "message": "ഹെഡറിന്റെ പേരും മൂല്യവും നൽകുക."
+  },
+  "alertDuplicate": {
+    "message": "ഈ ഹെഡർ ഇതിനകം നിലവിലുണ്ട്."
+  },
+  "emptyState": {
+    "message": "സംരക്ഷിച്ച ഹെഡറുകൾ ഇല്ല."
+  },
+  "warningNotApplied": {
+    "message": "🚨 ചില ഹെഡറുകൾ പ്രയോഗിക്കപ്പെടണമെന്നില്ല."
+  },
+  "btnDelete": {
+    "message": "ഇല്ലാതാക്കുക"
+  },
+  "siteOnlyLabel": {
+    "message": "ഈ സൈറ്റിൽ മാത്രം പ്രയോഗിക്കുക"
+  },
+  "sourceCode": {
+    "message": "സോഴ്സ് കോഡ്"
+  }
+}

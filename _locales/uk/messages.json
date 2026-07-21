@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Редактор заголовків"
+  },
+  "extDescription": {
+    "message": "Розширення для додавання або видалення HTTP-заголовків запитів і відповідей"
+  },
+  "appTitle": {
+    "message": "Простий редактор заголовків"
+  },
+  "tabRequest": {
+    "message": "Заголовки запиту"
+  },
+  "tabResponse": {
+    "message": "Заголовки відповіді"
+  },
+  "addRequestHeader": {
+    "message": "Додати заголовок запиту"
+  },
+  "addResponseHeader": {
+    "message": "Додати заголовок відповіді"
+  },
+  "headerNamePlaceholder": {
+    "message": "Назва заголовка (напр. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Значення заголовка"
+  },
+  "btnAdd": {
+    "message": "Додати"
+  },
+  "savedRequestHeaders": {
+    "message": "Збережені заголовки запитів"
+  },
+  "savedResponseHeaders": {
+    "message": "Збережені заголовки відповідей"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Важливо:</strong> деякі заголовки можуть не застосовуватися в певних ситуаціях."
+  },
+  "btnChangeLanguage": {
+    "message": "Змінити мову"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Назва заголовка (напр. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Автоматично застосовується до всіх вкладок"
+  },
+  "alertEmptyFields": {
+    "message": "Введіть назву та значення заголовка."
+  },
+  "alertDuplicate": {
+    "message": "Такий заголовок уже існує."
+  },
+  "emptyState": {
+    "message": "Немає збережених заголовків."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Деякі заголовки можуть не застосовуватися."
+  },
+  "btnDelete": {
+    "message": "Видалити"
+  },
+  "siteOnlyLabel": {
+    "message": "Застосовувати лише до цього сайту"
+  },
+  "sourceCode": {
+    "message": "Вихідний код"
+  }
+}

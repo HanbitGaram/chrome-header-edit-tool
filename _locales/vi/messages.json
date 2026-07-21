@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "Xóa"
+  },
+  "siteOnlyLabel": {
+    "message": "Chỉ áp dụng cho trang này"
+  },
+  "sourceCode": {
+    "message": "Mã nguồn"
   }
 }

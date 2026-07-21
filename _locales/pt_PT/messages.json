@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Editor de Cabeçalhos"
+  },
+  "extDescription": {
+    "message": "Extensão para adicionar ou remover cabeçalhos HTTP de pedido e resposta"
+  },
+  "appTitle": {
+    "message": "Editor de Cabeçalhos Simples"
+  },
+  "tabRequest": {
+    "message": "Cabeçalhos de pedido"
+  },
+  "tabResponse": {
+    "message": "Cabeçalhos de resposta"
+  },
+  "addRequestHeader": {
+    "message": "Adicionar cabeçalho de pedido"
+  },
+  "addResponseHeader": {
+    "message": "Adicionar cabeçalho de resposta"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nome do cabeçalho (ex.: User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Valor do cabeçalho"
+  },
+  "btnAdd": {
+    "message": "Adicionar"
+  },
+  "savedRequestHeaders": {
+    "message": "Cabeçalhos de pedido guardados"
+  },
+  "savedResponseHeaders": {
+    "message": "Cabeçalhos de resposta guardados"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Importante:</strong> alguns cabeçalhos podem não ser aplicados em determinadas situações."
+  },
+  "btnChangeLanguage": {
+    "message": "Alterar idioma"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nome do cabeçalho (ex.: access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Aplicado automaticamente em todos os separadores"
+  },
+  "alertEmptyFields": {
+    "message": "Introduza o nome e o valor do cabeçalho."
+  },
+  "alertDuplicate": {
+    "message": "Este cabeçalho já existe."
+  },
+  "emptyState": {
+    "message": "Nenhum cabeçalho guardado."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Alguns cabeçalhos podem não ser aplicados."
+  },
+  "btnDelete": {
+    "message": "Eliminar"
+  },
+  "siteOnlyLabel": {
+    "message": "Aplicar apenas a este site"
+  },
+  "sourceCode": {
+    "message": "Código-fonte"
+  }
+}

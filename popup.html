@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -25,14 +25,49 @@
             <option value="es">Español</option>
             <option value="fr">Français</option>
             <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt_BR">Português (Brasil)</option>
+            <option value="pt_PT">Português (Portugal)</option>
+            <option value="nl">Nederlands</option>
+            <option value="pl">Polski</option>
             <option value="ru">Русский</option>
-            <option value="ar">العربية</option>
-            <option value="hi">हिन्दी</option>
-            <option value="tr">Türkçe</option>
-            <option value="vi">Tiếng Việt</option>
+            <option value="uk">Українська</option>
+            <option value="cs">Čeština</option>
+            <option value="sk">Slovenčina</option>
+            <option value="sl">Slovenščina</option>
+            <option value="hr">Hrvatski</option>
+            <option value="sr">Српски</option>
+            <option value="bg">Български</option>
             <option value="ro">Română</option>
+            <option value="hu">Magyar</option>
+            <option value="el">Ελληνικά</option>
+            <option value="sv">Svenska</option>
+            <option value="da">Dansk</option>
             <option value="no">Norsk</option>
+            <option value="fi">Suomi</option>
+            <option value="et">Eesti</option>
+            <option value="lt">Lietuvių</option>
+            <option value="lv">Latviešu</option>
+            <option value="ca">Català</option>
+            <option value="tr">Türkçe</option>
+            <option value="ar">العربية</option>
+            <option value="he">עברית</option>
+            <option value="fa">فارسی</option>
+            <option value="hi">हिन्दी</option>
+            <option value="bn">বাংলা</option>
+            <option value="mr">मराठी</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ml">മലയാളം</option>
+            <option value="th">ไทย</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="ms">Bahasa Melayu</option>
             <option value="fil">Filipino</option>
+            <option value="sw">Kiswahili</option>
+            <option value="am">አማርኛ</option>
           </select>
         </div>
       </div>
@@ -50,7 +85,7 @@
         ></button>
       </div>
 
-      <!-- 요청 헤더 섹션 -->
+      <!-- Request headers section -->
       <div id="request-tab" class="tab-content active">
         <h2 data-i18n="addRequestHeader"></h2>
         <div class="form-group">
@@ -80,14 +115,20 @@
             id="req-value"
             data-i18n-placeholder="headerValuePlaceholder"
           />
-          <button id="add-req-btn" data-i18n="btnAdd"></button>
+          <div class="form-row">
+            <label class="site-scope" data-i18n-title="siteOnlyLabel">
+              <input type="checkbox" id="req-site-only" />
+              <span class="site-chip"></span>
+            </label>
+            <button id="add-req-btn" data-i18n="btnAdd"></button>
+          </div>
         </div>
 
         <h3 data-i18n="savedRequestHeaders"></h3>
         <div id="req-headers-list" class="headers-list"></div>
       </div>
 
-      <!-- 응답 헤더 섹션 -->
+      <!-- Response headers section -->
       <div id="response-tab" class="tab-content">
         <div class="warning-banner" data-i18n-html="warningBanner"></div>
 
@@ -119,15 +160,31 @@
             id="res-value"
             data-i18n-placeholder="headerValuePlaceholder"
           />
-          <button id="add-res-btn" data-i18n="btnAdd"></button>
+          <div class="form-row">
+            <label class="site-scope" data-i18n-title="siteOnlyLabel">
+              <input type="checkbox" id="res-site-only" />
+              <span class="site-chip"></span>
+            </label>
+            <button id="add-res-btn" data-i18n="btnAdd"></button>
+          </div>
         </div>
 
         <h3 data-i18n="savedResponseHeaders"></h3>
         <div id="res-headers-list" class="headers-list"></div>
       </div>
 
-      <div class="info">
+      <div class="info" style="display: none">
         <p data-i18n="infoMessage"></p>
+      </div>
+
+      <div class="footer">
+        <span data-i18n="sourceCode"></span> :
+        <a
+          href="https://github.com/HanbitGaram/chrome-header-edit-tool"
+          target="_blank"
+          rel="noopener"
+          >github.com/HanbitGaram/chrome-header-edit-tool</a
+        >
       </div>
     </div>
 

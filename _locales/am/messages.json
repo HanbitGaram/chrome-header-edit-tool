@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "የራስጌ አርታዒ"
+  },
+  "extDescription": {
+    "message": "የHTTP ጥያቄ እና ምላሽ ራስጌዎችን ለመጨመር ወይም ለማስወገድ የሚያገለግል ቅጥያ"
+  },
+  "appTitle": {
+    "message": "ቀላል የራስጌ አርታዒ"
+  },
+  "tabRequest": {
+    "message": "የጥያቄ ራስጌዎች"
+  },
+  "tabResponse": {
+    "message": "የምላሽ ራስጌዎች"
+  },
+  "addRequestHeader": {
+    "message": "የጥያቄ ራስጌ ጨምር"
+  },
+  "addResponseHeader": {
+    "message": "የምላሽ ራስጌ ጨምር"
+  },
+  "headerNamePlaceholder": {
+    "message": "የራስጌ ስም (ለምሳሌ User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "የራስጌ እሴት"
+  },
+  "btnAdd": {
+    "message": "ጨምር"
+  },
+  "savedRequestHeaders": {
+    "message": "የተቀመጡ የጥያቄ ራስጌዎች"
+  },
+  "savedResponseHeaders": {
+    "message": "የተቀመጡ የምላሽ ራስጌዎች"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>አስፈላጊ:</strong> አንዳንድ ራስጌዎች በተወሰኑ ሁኔታዎች ላይተገበሩ ይችላሉ።"
+  },
+  "btnChangeLanguage": {
+    "message": "ቋንቋ ቀይር"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "የራስጌ ስም (ለምሳሌ access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 በሁሉም ትሮች ላይ በራስ-ሰር ይተገበራል"
+  },
+  "alertEmptyFields": {
+    "message": "የራስጌውን ስም እና እሴት ያስገቡ።"
+  },
+  "alertDuplicate": {
+    "message": "ይህ ራስጌ አስቀድሞ አለ።"
+  },
+  "emptyState": {
+    "message": "የተቀመጡ ራስጌዎች የሉም።"
+  },
+  "warningNotApplied": {
+    "message": "🚨 አንዳንድ ራስጌዎች ላይተገበሩ ይችላሉ።"
+  },
+  "btnDelete": {
+    "message": "ሰርዝ"
+  },
+  "siteOnlyLabel": {
+    "message": "በዚህ ጣቢያ ላይ ብቻ ተግብር"
+  },
+  "sourceCode": {
+    "message": "ምንጭ ኮድ"
+  }
+}

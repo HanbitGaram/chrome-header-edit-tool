@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "ಹೆಡರ್ ಎಡಿಟರ್"
+  },
+  "extDescription": {
+    "message": "HTTP ವಿನಂತಿ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ ಹೆಡರ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಅಥವಾ ತೆಗೆದುಹಾಕಲು ವಿಸ್ತರಣೆ"
+  },
+  "appTitle": {
+    "message": "ಸರಳ ಹೆಡರ್ ಎಡಿಟರ್"
+  },
+  "tabRequest": {
+    "message": "ವಿನಂತಿ ಹೆಡರ್‌ಗಳು"
+  },
+  "tabResponse": {
+    "message": "ಪ್ರತಿಕ್ರಿಯೆ ಹೆಡರ್‌ಗಳು"
+  },
+  "addRequestHeader": {
+    "message": "ವಿನಂತಿ ಹೆಡರ್ ಸೇರಿಸಿ"
+  },
+  "addResponseHeader": {
+    "message": "ಪ್ರತಿಕ್ರಿಯೆ ಹೆಡರ್ ಸೇರಿಸಿ"
+  },
+  "headerNamePlaceholder": {
+    "message": "ಹೆಡರ್ ಹೆಸರು (ಉದಾ. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "ಹೆಡರ್ ಮೌಲ್ಯ"
+  },
+  "btnAdd": {
+    "message": "ಸೇರಿಸಿ"
+  },
+  "savedRequestHeaders": {
+    "message": "ಉಳಿಸಿದ ವಿನಂತಿ ಹೆಡರ್‌ಗಳು"
+  },
+  "savedResponseHeaders": {
+    "message": "ಉಳಿಸಿದ ಪ್ರತಿಕ್ರಿಯೆ ಹೆಡರ್‌ಗಳು"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>ಮುಖ್ಯ:</strong> ಕೆಲವು ಹೆಡರ್‌ಗಳು ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ ಅನ್ವಯವಾಗದಿರಬಹುದು."
+  },
+  "btnChangeLanguage": {
+    "message": "ಭಾಷೆ ಬದಲಾಯಿಸಿ"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "ಹೆಡರ್ ಹೆಸರು (ಉದಾ. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯವಾಗುತ್ತದೆ"
+  },
+  "alertEmptyFields": {
+    "message": "ಹೆಡರ್ ಹೆಸರು ಮತ್ತು ಮೌಲ್ಯ ಎರಡನ್ನೂ ನಮೂದಿಸಿ."
+  },
+  "alertDuplicate": {
+    "message": "ಈ ಹೆಡರ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
+  },
+  "emptyState": {
+    "message": "ಉಳಿಸಿದ ಹೆಡರ್‌ಗಳಿಲ್ಲ."
+  },
+  "warningNotApplied": {
+    "message": "🚨 ಕೆಲವು ಹೆಡರ್‌ಗಳು ಅನ್ವಯವಾಗದಿರಬಹುದು."
+  },
+  "btnDelete": {
+    "message": "ಅಳಿಸಿ"
+  },
+  "siteOnlyLabel": {
+    "message": "ಈ ಸೈಟ್‌ಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸಿ"
+  },
+  "sourceCode": {
+    "message": "ಮೂಲ ಕೋಡ್"
+  }
+}

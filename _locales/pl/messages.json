@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Edytor nagłówków"
+  },
+  "extDescription": {
+    "message": "Rozszerzenie do dodawania i usuwania nagłówków żądań i odpowiedzi HTTP"
+  },
+  "appTitle": {
+    "message": "Prosty edytor nagłówków"
+  },
+  "tabRequest": {
+    "message": "Nagłówki żądania"
+  },
+  "tabResponse": {
+    "message": "Nagłówki odpowiedzi"
+  },
+  "addRequestHeader": {
+    "message": "Dodaj nagłówek żądania"
+  },
+  "addResponseHeader": {
+    "message": "Dodaj nagłówek odpowiedzi"
+  },
+  "headerNamePlaceholder": {
+    "message": "Nazwa nagłówka (np. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Wartość nagłówka"
+  },
+  "btnAdd": {
+    "message": "Dodaj"
+  },
+  "savedRequestHeaders": {
+    "message": "Zapisane nagłówki żądań"
+  },
+  "savedResponseHeaders": {
+    "message": "Zapisane nagłówki odpowiedzi"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Ważne:</strong> niektóre nagłówki mogą nie zostać zastosowane w pewnych sytuacjach."
+  },
+  "btnChangeLanguage": {
+    "message": "Zmień język"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Nazwa nagłówka (np. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Stosowane automatycznie we wszystkich kartach"
+  },
+  "alertEmptyFields": {
+    "message": "Podaj nazwę i wartość nagłówka."
+  },
+  "alertDuplicate": {
+    "message": "Ten nagłówek już istnieje."
+  },
+  "emptyState": {
+    "message": "Brak zapisanych nagłówków."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Niektóre nagłówki mogą nie zostać zastosowane."
+  },
+  "btnDelete": {
+    "message": "Usuń"
+  },
+  "siteOnlyLabel": {
+    "message": "Zastosuj tylko do tej witryny"
+  },
+  "sourceCode": {
+    "message": "Kod źródłowy"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Urejevalnik glav"
+  },
+  "extDescription": {
+    "message": "Razširitev za dodajanje ali odstranjevanje glav HTTP zahtev in odgovorov"
+  },
+  "appTitle": {
+    "message": "Preprost urejevalnik glav"
+  },
+  "tabRequest": {
+    "message": "Glave zahteve"
+  },
+  "tabResponse": {
+    "message": "Glave odgovora"
+  },
+  "addRequestHeader": {
+    "message": "Dodaj glavo zahteve"
+  },
+  "addResponseHeader": {
+    "message": "Dodaj glavo odgovora"
+  },
+  "headerNamePlaceholder": {
+    "message": "Ime glave (npr. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Vrednost glave"
+  },
+  "btnAdd": {
+    "message": "Dodaj"
+  },
+  "savedRequestHeaders": {
+    "message": "Shranjene glave zahtev"
+  },
+  "savedResponseHeaders": {
+    "message": "Shranjene glave odgovorov"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Pomembno:</strong> nekatere glave v določenih primerih morda ne bodo uporabljene."
+  },
+  "btnChangeLanguage": {
+    "message": "Spremeni jezik"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Ime glave (npr. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Samodejno velja za vse zavihke"
+  },
+  "alertEmptyFields": {
+    "message": "Vnesite ime in vrednost glave."
+  },
+  "alertDuplicate": {
+    "message": "Ta glava že obstaja."
+  },
+  "emptyState": {
+    "message": "Ni shranjenih glav."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Nekatere glave morda ne bodo uporabljene."
+  },
+  "btnDelete": {
+    "message": "Izbriši"
+  },
+  "siteOnlyLabel": {
+    "message": "Uporabi samo za to spletno mesto"
+  },
+  "sourceCode": {
+    "message": "Izvorna koda"
+  }
+}

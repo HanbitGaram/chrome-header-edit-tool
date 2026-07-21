@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "刪除"
+  },
+  "siteOnlyLabel": {
+    "message": "僅套用於此網站"
+  },
+  "sourceCode": {
+    "message": "原始碼"
   }
 }

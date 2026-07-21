@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Otsake-editori"
+  },
+  "extDescription": {
+    "message": "Laajennus HTTP-pyyntö- ja vastausotsakkeiden lisäämiseen ja poistamiseen"
+  },
+  "appTitle": {
+    "message": "Yksinkertainen otsake-editori"
+  },
+  "tabRequest": {
+    "message": "Pyyntöotsakkeet"
+  },
+  "tabResponse": {
+    "message": "Vastausotsakkeet"
+  },
+  "addRequestHeader": {
+    "message": "Lisää pyyntöotsake"
+  },
+  "addResponseHeader": {
+    "message": "Lisää vastausotsake"
+  },
+  "headerNamePlaceholder": {
+    "message": "Otsakkeen nimi (esim. User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Otsakkeen arvo"
+  },
+  "btnAdd": {
+    "message": "Lisää"
+  },
+  "savedRequestHeaders": {
+    "message": "Tallennetut pyyntöotsakkeet"
+  },
+  "savedResponseHeaders": {
+    "message": "Tallennetut vastausotsakkeet"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Tärkeää:</strong> joitakin otsakkeita ei välttämättä sovelleta kaikissa tilanteissa."
+  },
+  "btnChangeLanguage": {
+    "message": "Vaihda kieli"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Otsakkeen nimi (esim. access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Sovelletaan automaattisesti kaikkiin välilehtiin"
+  },
+  "alertEmptyFields": {
+    "message": "Anna sekä otsakkeen nimi että arvo."
+  },
+  "alertDuplicate": {
+    "message": "Tämä otsake on jo olemassa."
+  },
+  "emptyState": {
+    "message": "Ei tallennettuja otsakkeita."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Joitakin otsakkeita ei välttämättä sovelleta."
+  },
+  "btnDelete": {
+    "message": "Poista"
+  },
+  "siteOnlyLabel": {
+    "message": "Käytä vain tällä sivustolla"
+  },
+  "sourceCode": {
+    "message": "Lähdekoodi"
+  }
+}

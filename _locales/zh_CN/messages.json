@@ -61,5 +61,11 @@
   },
   "btnDelete": {
     "message": "删除"
+  },
+  "siteOnlyLabel": {
+    "message": "仅应用于此网站"
+  },
+  "sourceCode": {
+    "message": "源代码"
   }
 }

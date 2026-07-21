@@ -1,0 +1,71 @@
+{
+  "extName": {
+    "message": "Päiste redaktor"
+  },
+  "extDescription": {
+    "message": "Laiendus HTTP päringu- ja vastusepäiste lisamiseks või eemaldamiseks"
+  },
+  "appTitle": {
+    "message": "Lihtne päiste redaktor"
+  },
+  "tabRequest": {
+    "message": "Päringu päised"
+  },
+  "tabResponse": {
+    "message": "Vastuse päised"
+  },
+  "addRequestHeader": {
+    "message": "Lisa päringu päis"
+  },
+  "addResponseHeader": {
+    "message": "Lisa vastuse päis"
+  },
+  "headerNamePlaceholder": {
+    "message": "Päise nimi (nt User-Agent)"
+  },
+  "headerValuePlaceholder": {
+    "message": "Päise väärtus"
+  },
+  "btnAdd": {
+    "message": "Lisa"
+  },
+  "savedRequestHeaders": {
+    "message": "Salvestatud päringu päised"
+  },
+  "savedResponseHeaders": {
+    "message": "Salvestatud vastuse päised"
+  },
+  "warningBanner": {
+    "message": "⚠️ <strong>Tähtis:</strong> mõnda päist ei pruugita teatud olukordades rakendada."
+  },
+  "btnChangeLanguage": {
+    "message": "Muuda keelt"
+  },
+  "responseHeaderPlaceholder": {
+    "message": "Päise nimi (nt access-control-allow-origin)"
+  },
+  "infoMessage": {
+    "message": "💡 Rakendub automaatselt kõigil vahekaartidel"
+  },
+  "alertEmptyFields": {
+    "message": "Sisestage nii päise nimi kui ka väärtus."
+  },
+  "alertDuplicate": {
+    "message": "See päis on juba olemas."
+  },
+  "emptyState": {
+    "message": "Salvestatud päiseid pole."
+  },
+  "warningNotApplied": {
+    "message": "🚨 Mõnda päist ei pruugita rakendada."
+  },
+  "btnDelete": {
+    "message": "Kustuta"
+  },
+  "siteOnlyLabel": {
+    "message": "Rakenda ainult sellel saidil"
+  },
+  "sourceCode": {
+    "message": "Lähtekood"
+  }
+}
